@@ -11,6 +11,7 @@ class Contact extends CI_Controller {
 		$this->load->helper('file');
 		$this->load->library('form_validation');
     $this->load->helper('email');
+    $this->load->helper('common');
 	}
 
 	public function index()
@@ -18,11 +19,11 @@ class Contact extends CI_Controller {
 		$this->load->view('contact/form');
 	}
 
-	public function confirm(){
+	public function thanks(){
 
 		$this->form_validation->set_rules('name', 'お名前', 'required');
 		$this->form_validation->set_rules('company', '貴社名', 'required');
-		$this->form_validation->set_rules('mail', 'メールアドレス', 'valid_email');
+		$this->form_validation->set_rules('email', 'メールアドレス', 'required|valid_email');
 		$this->form_validation->set_rules('tel', '電話番号', 'required|integer');
 		$this->form_validation->set_rules('authorization', '物件の許認可状況', '');
     $this->form_validation->set_rules('right', '物件の権利状況', '');
@@ -45,39 +46,30 @@ class Contact extends CI_Controller {
 
 		$res = $this->form_validation->run();
 
-		if($res){
-	          $data['company'] = $this->input->post('company');
-		  $data['name'] = $this->input->post('name');
-		  $data['tel'] = $this->input->post('tel');
-		  $data['email'] = $this->input->post('email');
-		  $data['content'] = $this->input->post('content');
+    if($res){
 
-		  $this->load->view('contact/confirm', $data);
-		}else{
-		  $data['error_message'] = validation_errors();
-		  $data['param'] = $this->input->post();
+      $post = $this->input->post();
 
-		  $this->load->view('contact/form', $data);
-		}
-	}
 
-	public function thanks(){
-		$post = $this->input->post();
+      $check_post = check_param($post);
 
-		if($post){
+      $this->load->library('parser');
 
- 		    $this->load->library('parser');
+      $this->config->load('app', TRUE);
 
-		    $this->config->load('app', TRUE);
+      $title = '7garden | 一点物サイト【lupinus】からお問い合わせです';
+      $message = $this->parser->parse('email/template_email', $check_post, TRUE);
+      $email = $this->config->item('app')['contact_email'];
 
-		    $title = '7garden | 一点物サイト【lupinus】からお問い合わせです';
-		    $message = $this->parser->parse('email/contact_new', $post, TRUE);
-		    $email = $this->config->item('app')['contact_email'];
+      $this->load->model('bll/Bll_email');
 
-		    $this->load->model('bll/Bll_email');
+      $result = $this->Bll_email->send_email($title, $message, $email);
 
-		    $result = $this->Bll_email->send_email($title, $message, $email);
-		}
+      $this->load->view('contact/thanks');
+      //$this->load->view('email/template_email');
+    }else{
+      $this->load->view('contact/form');
+    }
+  }
 
-	}
 }

@@ -69,7 +69,7 @@
     </div>
 
     <section id="contact">
-      <?= form_open('contact/confirm'); ?>
+      <?= form_open('contact/thanks'); ?>
         <div class="contact_item_wrap">
             <p class="contact_item"><span>※</span> お名前</p>
         </div>
@@ -109,7 +109,7 @@
           <input type="radio" name="authorization" value="1"><p class="choice">特になし</p><br>
           <input type="radio" name="authorization" value="2"><p class="choice">旅館・ホテル（旅館業法）</p><br>
           <input type="radio" name="authorization" value="3"><p class="choice">簡易宿所（旅館業法)</p><br>
-          <input type="radio" name="authorization" value="4"><input type="text" name="other" placeholder="その他" class="disable input_other">
+          <input type="radio" name="authorization" value="4" class="other"><input type="text" name="other" placeholder="その他" class="disable input_other">
         </div>
         <br>
         <div class="contact_item_wrap">
@@ -120,7 +120,7 @@
           <input type="radio" name="right" value="1"><p class="choice">特になし</p><br>
           <input type="radio" name="right" value="2"><p class="choice">旅館・ホテル（旅館業法）</p><br>
           <input type="radio" name="right" value="3"><p class="choice">簡易宿所（旅館業法)</p><br>
-          <input type="radio" name="right" value="4"><input type="text" name="other" placeholder="その他" class="disable input_other">
+          <input type="radio" name="right" value="4" class="other"><input type="text" name="other" placeholder="その他" class="disable input_other">
         </div>
         <br>
         <div class="contact_item_wrap">
@@ -130,11 +130,11 @@
         <input type="text" name="address" class="input">
         <br>
         <div class="contact_item_wrap">
-            <p class="contact_item">検討中の物件戸数</p>
+            <p class="contact_item">検討中の物件戸数　<span>※</span>選択してください</p>
         </div>
         <br>
         <div class="select-wrap">
-            <select name="number">
+            <select name="number" placeholder="選択してください">
                 <option>1戸</option>
                 <option>2戸</option>
                 <option>3戸</option>
@@ -153,7 +153,7 @@
         </div>
         <br>
         <div class="contact_item_wrap">
-            <p class="contact_item">間取り</p>
+            <p class="contact_item">間取り　<span>※</span>選択してください</p>
         </div>
         <br>
         <div class="select-wrap">
@@ -196,7 +196,7 @@
           <input type="radio" name="origin" value="3"><p class="choice">知人/他社の紹介</p><br>
           <input type="radio" name="origin" value="4"><p class="choice">他サイト、ブログ、掲示板の口コミ</p><br>
           <input type="radio" name="origin" value="5"><p class="choice">本・雑誌・新聞</p><br>
-          <input type="radio" name="origin" value="6"><input type="text" name="other" placeholder="その他" class="disable input_other">
+          <input type="radio" name="origin" value="6" class="other"><input type="text" name="other" placeholder="その他" class="input_other">
         </div>
 
         <div class="submit">
@@ -227,7 +227,19 @@
       </div>
     </div>
   </div>
-
+  <style>
+    .input_other{
+      pointer-events: none;
+    }
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="<?= base_url('static/js/common.js'); ?>"></script>
+
+  <script>
+      $(function(){
+          $(".other").click(function(){
+            $('.input_other').css('pointer-events', 'auto');
+          });
+      });
+  </script>
 </body>

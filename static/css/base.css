@@ -250,6 +250,7 @@ html{
   line-height: 1.6em;
   font-size: 14px;
   letter-spacing: 0.1em;
+  text-align: justify;
 }
 
 .title-tx{
@@ -1281,6 +1282,49 @@ textarea{
   color: #E3675F;
   margin-top: 2%;
   font-size: 14px;
+}
+
+/* thanks */
+
+.thanks-title h2{
+  font-size: 36px;
+  line-height: 2em;
+}
+
+.thanks-title p{
+  font-family: 'DINNextLTPro-Medium';
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+.thanks-tx{
+
+}
+
+.thanks-tx p{
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.7em;
+}
+
+.thanks-top{
+  border: 1px solid #E3675F;
+  color: #E3675F;
+  width: 23%;
+  padding: 2% 3%;
+  border-radius: 3px;
+  margin: 5% auto 10% auto;;
+}
+
+.thanks-top{
+  text-align: center;
+}
+
+.thanks-top a p{
+  text-align: center;
+  color: #E3675F;
+  font-weight: 500;
 }
 
 /* footer  */
