@@ -7,19 +7,17 @@ class Dal_room extends MY_model{
     $this->load->model('bll/Bll_room');
   }
 
-  public function dal_get_room_index($param){
+  public function dal_get_room_index(){
 
-    if(!empty($param['order_by'])){
-      $order_by = $param['order_by'];
-    }
+    $where_array['room.delete_flg'] = 0;
+    $this->db->select('*')->from('room');
+    $this->db->join('room_images', 'room.id = room_images.room_id');
+    $this->db->where($where_array);
+    $this->db->order_by('room.id', 'DESC');
 
-    $where_array['delete_flg'] = 0;
-    $this->db->select('*');
-    $this->db->where('delete_flg', $where_array);
+    $ret = $this->db->get()->result_array();
 
-    $ret = $this->db->get('room')->result_array();
-
-
+    return $ret;
   }
 
 }

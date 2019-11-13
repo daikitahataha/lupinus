@@ -22,10 +22,13 @@ class Statics extends CI_Controller {
 
   public function roomIndex(){
 
-    $param['order_by'] = 'DESC';
-    $data['room'] = $this->Bll_room->get_room_index($param);
+    $data['room'] = $this->Bll_room->get_room_index();
 
-    $this->load->view('statics/roomIndex');
+    $this->load->view('statics/roomIndex', $data);
+  }
+
+  public function roomDetail($id){
+    
   }
 
   public function roomDetailasakusa(){
