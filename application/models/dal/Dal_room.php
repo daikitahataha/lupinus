@@ -1,6 +1,6 @@
 <?php
 
-class Dal_user extends MY_model{
+class Dal_room extends MY_model{
 
   public function __construct(){
     parent::__construct();
@@ -9,7 +9,7 @@ class Dal_user extends MY_model{
 
   public function dal_get_room_index($param){
 
-    if(!empty($param['order_by']){
+    if(!empty($param['order_by'])){
       $order_by = $param['order_by'];
     }
 
@@ -19,9 +19,6 @@ class Dal_user extends MY_model{
 
     $ret = $this->db->get('room')->result_array();
 
-    if(!empty($ret[0])){
-      
-    }
 
   }
 

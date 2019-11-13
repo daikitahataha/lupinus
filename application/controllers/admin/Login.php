@@ -34,7 +34,7 @@ class Login extends Admin_abstract {
               $sessions['permission_status'] = $user[0]['permission_status'];
               $this->session->set_userdata($sessions);
 
-              $this->load->view('admin/user/create');
+              $this->load->view('admin/roomManager/create');
             }else{
               $this->load->view('admin/login/index');
             }
