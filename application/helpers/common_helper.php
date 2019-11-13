@@ -48,8 +48,16 @@ function check_param($param){
   }
 
   return $param;
+}
 
-
+function show_room_images($param){
+  if(!empty($param)){
+    $res = base_url('uploads/images/' . $param);
+    return $res;
+  }else{
+    $res = base_url('static/images/patrick-perkins-23 2.png');
+    return $res;
+  }
 }
 
  ?>

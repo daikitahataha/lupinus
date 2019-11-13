@@ -20,6 +20,30 @@ class Dal_room extends MY_model{
     return $ret;
   }
 
+  public function dal_get_room_detail($id){
+    $this->db->select('*')->from('room');
+    $this->db->where('id', $id);
+    $this->db->where('delete_flg', 0);
+
+    $res = $this->db->get()->result_array();
+
+    if(!empty($ret[0])){
+      $this->db->select('*');
+      $this->db->where('room_id', $id);
+
+      $this->db->from('room');
+      $this->db->join('room_images', 'room.id = room_images.room_id');
+      $where_array['room.delete_flg'] = 0;
+      $this->db->where($where_array);
+
+      $ret = $this->db->get()->result_array();
+    }else{
+      $ret= FALSE;
+    }
+
+    return $ret;
+  }
+
 }
 
 ?>

@@ -79,8 +79,8 @@
             </a>
         </div>
         <div class="room-content-tx">
-            <p class="place">東京/浅草</p>
-            <p class="date">運営開始日：2019年10月</p>
+            <p class="place"><?= $val['place']; ?></p>
+            <p class="date">運営開始日：<?= $val['start_date']; ?></p>
         </div>
 
       <?php } ?>

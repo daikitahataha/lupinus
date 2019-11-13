@@ -28,7 +28,11 @@ class Statics extends CI_Controller {
   }
 
   public function roomDetail($id){
-    
+
+    $data['room'] = $this->Bll_room->get_room_detail($id);
+
+    $this->load->view('statics/roomDetail', $data);
+
   }
 
   public function roomDetailasakusa(){
