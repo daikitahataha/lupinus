@@ -1,6 +1,6 @@
 <?php
 
-class Bll_room extends MY_model{
+class Bll_room extends MY_Model{
 
     public function __construct(){
         parent::__construct();
