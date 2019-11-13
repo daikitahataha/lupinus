@@ -70,11 +70,27 @@
        <h2>実績</h2>
     </div>
 
+    <div class="room-content">
+        <?php foreach($data as $key => $val){ ?>
+
+        <div class="room-content-img">
+            <a href="<?= base_url('statics/roomDetail/' . $val['id']); ?>">
+              <img src="<?= show_room_images($val['images']); ?>">
+            </a>
+        </div>
+        <div class="room-content-tx">
+            <p class="place">東京/浅草</p>
+            <p class="date">運営開始日：2019年10月</p>
+        </div>
+
+      <?php } ?>
+    </div>
+
     <section id="room-index">
         <div class="room-index-flex">
             <div class="room-content">
                 <div class="room-content-img">
-                    <a href="<?= base_url('statics/roomDetailasakusa')  ?>">
+                    <a href="<?= base_url('statics/roomDetailasakusa'); ?>">
                       <img src="<?= base_url('static/images/DSC_0567.jpg'); ?>">
                     </a>
                 </div>
