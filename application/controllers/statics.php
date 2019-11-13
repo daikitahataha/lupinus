@@ -8,6 +8,7 @@ class Statics extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->helper('form');
 		$this->load->helper('file');
+    $this->load->model('bll/Bll_room');
 	}
 
 	public function index()
@@ -22,7 +23,7 @@ class Statics extends CI_Controller {
   public function roomIndex(){
 
     $param['order_by'] = 'DESC';
-    $data['room'] = $this->
+    $data['room'] = $this->Bll_room->get_room_index($param);
 
     $this->load->view('statics/roomIndex');
   }
