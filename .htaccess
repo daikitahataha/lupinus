@@ -3,6 +3,8 @@ RewriteCond %{REQUEST_URI} ^/system.*
 RewriteRule ^(.*)$ index.php?/$1 [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|css|js|uploads|.+\.js$|.+\.png$|.+\.jpg$|robots\.txt)
+#RewriteCond $1 !^(index\.php|uploads/images|robots\.txt)
 RewriteRule ^(.*)$ index.php?/$1 [L]
 #AuthType Basic
 #AuthName "Input your ID and Password."
