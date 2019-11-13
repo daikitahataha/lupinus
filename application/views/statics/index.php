@@ -28,22 +28,22 @@
 <body>
     <div class="wrapper">
       <section id="header">
-            <a class="logo" href="<?= base_url('statics/index') ?>">
+            <a class="logo">
 	            <img src="<?= base_url('static/images/component.png'); ?>">
             </a>
 
           <div class="header_menu">
-            <ul>
-              <a href="<?= base_url('statics/about'); ?>"><li class="menu_normal">会社情報</li></a>
-              <a href="<?= base_url('statics/roomIndex'); ?>"><li class="menu_normal">実績</li></a>
-              <a href="<?= base_url('statics/fee'); ?>"><li class="menu_normal">料金例</li></a>
-              <a href="<?= base_url('statics/flow'); ?>"><li class="menu_normal">フロー</li></a>
-            </ul>
-            <div class="menu_inquiry">
-              <a href="<?= base_url('contact/index'); ?>">
-                お問い合わせ
-              </a>
-            </div>
+              <ul>
+                <a href="#"><li class="menu_normal">会社情報</li></a>
+                <a href="#"><li class="menu_normal">実績</li></a>
+                <a href="#"><li class="menu_normal">料金例</li></a>
+                <a href="#"><li class="menu_normal">フロー</li></a>
+	            </ul>
+              <div class="menu_inquiry">
+                <a href="#">
+                  お問い合わせ
+                </a>
+              </div>
  	        </div>
 
           <div class="sp_header_menu">
@@ -55,22 +55,22 @@
  	        </div>
 
           <div class="menu-nav">
-              <p class="nav-item">
-                <a href="<?= base_url('static/about'); ?>" class="nav-link">会社情報</a>
-              </p>
-              <p class="nav-item">
-                <a href="<?= base_url('static/roomIndex'); ?>" class="nav-link">実績</a>
-              </p>
-              <p class="nav-item">
-                <a href="<?= base_url('static/fee'); ?>" class="nav-link">料金例</a>
-              </p>
-              <p class="nav-item">
-                <a href="<?= base_url('static/flow'); ?>" class="nav-link">フロー</a>
-              </p>
-              <p class="nav-item">
-                <a href="<?= base_url('contact/index'); ?>" class="nav-link">お問い合わせ</a>
-              </p>
-          </div>
+        <p class="nav-item">
+          <a href="#" class="nav-link">会社情報</a>
+        </p>
+        <p class="nav-item">
+          <a href="#" class="nav-link">実績</a>
+        </p>
+        <p class="nav-item">
+          <a href="#" class="nav-link">料金例</a>
+        </p>
+        <p class="nav-item">
+          <a href="#" class="nav-link">フロー</a>
+        </p>
+        <p class="nav-item">
+          <a href="#" class="nav-link">お問い合わせ</a>
+        </p>
+      </div>
       </section>
 
       <section id="top-mv">
@@ -131,10 +131,13 @@
                       </div>
                       <div class="content-flex-lead-tx">
                           <p>
-		                          現在は消費者のライフスタイルやニーズの変化が激しい時代。
-                              そんな時代にこそ、ターゲットに合わせた客室デザインが求められます。
-                              写真と価格で比較されるホテル予約サイトにおいて、ルピナスは洗練された客室デザインによって、
-                              価格競争に巻き込まれない、高単価のプライス設計を実現します。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
                           </p>
                       </div>
                   </div>
@@ -161,10 +164,13 @@
                     </div>
                     <div class="content-flex-lead-tx">
                           <p>
-                            ルピナスでは、各プロジェクトに集客の要となるWEBマーケティング人材をアサインし、
-                            予約獲得のための戦略・設計・運用にリソースを集中させます。またホテル運営の現場と連携し、
-                            相互にフィードバックを行います。それにより、集客・運営共に改善する仕組みを構築し、
-                            ホテル運営における成果を最大化させます。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
                           </p>
                     </div>
                   </div>
@@ -184,10 +190,13 @@
                     </div>
                     <div class="content-flex-lead-tx">
                           <p>
-                            ルピナスでは、各プロジェクトに集客の要となるWEBマーケティング人材をアサインし、
-                            予約獲得のための戦略・設計・運用にリソースを集中させます。またホテル運営の現場と連携し、
-                            相互にフィードバックを行います。それにより、集客・運営共に改善する仕組みを構築し、
-                            ホテル運営における成果を最大化させます。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
+                              ここにテキストが入ります。ここにテキスtが入ります。
                           </p>
                     </div>
                   </div>
@@ -209,10 +218,13 @@
                       </div>
                       <div class="content-flex-lead-tx">
                           <p>
-		                          ルピナスでは、ホテル運営において必要な業務を最適化し、運営における業務効率・ゲスト満足度を向上させます。
-                              ホテル運営の中で生じる、データ収集、データ入力、サイトの更新業務はもちろん、ゲストからの宿泊前問合せ対応、
-                              宿泊後のゲストフォロー等々多くの業務において、オフショアを活用し対応スピードをあげることで
-                              コスト効率・宿泊満足度を最大化します。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
+		                          ここにテキストが入ります。ここにテキスtが入ります。
                           </p>
                       </div>
                   </div>
@@ -248,7 +260,7 @@
 		                 <br>
 		                 でもせっかくお部屋を持っているのでなんとかビジネスにしたい。
  		                  <br>
-		                  面倒なことは全て我々に丸投げしてください。集客ができ、利益を還元できる人気のお部屋をプロデュースします。
+		                  面倒なことは全て我々に丸投げしてください。集客ができ、利益を還元できる人気のお                   部屋をプロデュースします。
 		             </p>
 	           </div>
 
@@ -262,9 +274,9 @@
 	           </div>
              <div class="content03-tx">
   		           <p>
-                  ルピナスを運営する7gardenは不動産×システム開発・運用専門の会社です。<br>
-		              7gardenでは予約数を高めるための、自社サイトの開発・既存サイト運用のhow toの実行・検証・改善を繰り返してきました。<br>
-                  蓄積されたノウハウを活かし、あなたのお部屋の稼働率を高めます。
+                  不動産×システム開発専門の7gardenが運営しているルピナスだからできること<br>
+		              ここにテキストが入ります。ここにテキストが入ります。<br>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
 		            </p>
 	           </div>
 
@@ -278,11 +290,11 @@
 	           </div>
              <div class="content03-tx">
   		           <p>
-                   ルピナスでは、お部屋の企画~運営に至るまでのプロセスを全てワンストップで行います。
-                   <br>
-                   運営開始後もオーナー様の要望を取り入れながら、運営改善を行うことが可能なルピナスだからこそ、
-                   <br>
-                   安心して運営を任せることができます。
+                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+		               <br>
+                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+ 		               <br>
+                   ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
 		             </p>
 	           </div>
 
@@ -302,165 +314,90 @@
              <div class="case-slider">
                  <div class="case">
 		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/DSC_0567c.jpg'); ?>">
+		                     <img src="<?= base_url('static/images/naomi-hebert-MP0bgaS_d1c-unsplash.png'); ?>">
                      </div>
                      <div class="case-title">
- 		                    <p>浅草　SEVENGARDEN</p>
+ 		                    <p>南青山　アパートメント名　2LDK</p>
 		                 </div>
   		               <div class="case-detail-top">
-		                     <p>運営開始日：2019年10月</p>
-		                     <!--<p class="benefit">利益率：30%</p>-->
+		                     <p>利回り：16%</p>
+		                     <p class="benefit">利益率：30%</p>
 		                 </div>
 
-                     <a href="<?= base_url('statics/roomDetailasakusa'); ?>"><p class="seeCase">このケースを見る</p></a>
+                     <p class="seeCase">このケースを見る</p>
 		             </div>
 
                  <div class="case">
 		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/booking_2019_10_29_157c.jpg'); ?>">
+		                     <img src="<?= base_url('static/images/naomi-hebert-MP0bgaS_d1c-unsplash.png'); ?>">
                    </div>
                    <div class="case-title">
- 		                  <p>博多/春吉　Mei Penthouse</p>
+ 		                  <p>南青山　アパートメント名　2LDK</p>
 		                </div>
   		              <div class="case-detail-top">
-                      <p>運営開始日：2019年11月</p>
-                      <!--<p class="benefit">利益率：30%</p>-->
+		                    <p>利回り：16%</p>
+		                    <p class="benefit">利益率：30%</p>
 		                </div>
 
-                   <a href="<?= base_url('statics/roomDetail2'); ?>"><p class="seeCase">このケースを見る</p></a>
+                   <p class="seeCase">このケースを見る</p>
 		             </div>
 
 
                  <div class="case">
 		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/booking_2019_10_29_119c.jpg'); ?>">
+		                     <img src="<?= base_url('static/images/naomi-hebert-MP0bgaS_d1c-unsplash.png'); ?>">
                      </div>
                      <div class="case-title">
- 		                    <p>博多/春吉　Mei Suite</p>
+ 		                    <p>南青山　アパートメント名　2LDK</p>
 		                  </div>
   		                <div class="case-detail-top">
-                        <p>運営開始日：2019年11月</p>
-                        <!--<p class="benefit">利益率：30%</p>-->
+		                      <p>利回り：16%</p>
+		                      <p class="benefit">利益率：30%</p>
 		                  </div>
 
-                      <a href="<?= base_url('statics/roomDetail3'); ?>"><p class="seeCase">このケースを見る</p></a>
+                      <p class="seeCase">このケースを見る</p>
 		              </div>
 
                  <div class="case">
 		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/booking_2019_10_29_218c.jpg'); ?>">
+		                     <img src="<?= base_url('static/images/naomi-hebert-MP0bgaS_d1c-unsplash.png'); ?>">
                    </div>
                    <div class="case-title">
- 		                  <p>博多/春吉　Mei Exective</p>
+ 		                  <p>南青山　アパートメント名　2LDK</p>
 		               </div>
   		             <div class="case-detail-top">
-                     <p>運営開始日：2019年11月</p>
-                     <!--<p class="benefit">利益率：30%</p>-->
+		                   <p>利回り：16%</p>
+		                   <p class="benefit">利益率：30%</p>
 		               </div>
 
-                   <a href="<?= base_url('statics/roomDetail4'); ?>"><p class="seeCase">このケースを見る</p></a>
+                   <p class="seeCase">このケースを見る</p>
 		             </div>
 
                  <div class="case">
 		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/booking_2019_10_29_54c.jpg'); ?>">
+		                     <img src="<?= base_url('static/images/naomi-hebert-MP0bgaS_d1c-unsplash.png'); ?>">
                      </div>
                      <div class="case-title">
- 		                    <p>博多/春吉　Mei Standard Twin</p>
+ 		                    <p>南青山　アパートメント名　2LDK</p>
 		                 </div>
   		               <div class="case-detail-top">
-                       <p>運営開始日：2019年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
+		                     <p>利回り：16%</p>
+		                     <p class="benefit">利益率：30%</p>
 		                 </div>
 
-                     <a href="<?= base_url('statics/roomDetail6'); ?>"><p class="seeCase">このケースを見る</p></a>
+                     <p class="seeCase">このケースを見る</p>
 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/booking_2019_10_29_26c.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>博多/春吉　Mei Atrium</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2019年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail5'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/booking_2019_10_29_90c.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>博多/春吉　Mei Standard Sofa</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2019年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail7'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/booking_2019_10_29_183c.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>博多/春吉　Mei Standard</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2019年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail8'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/twin5_resizec.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>東京/入船　Vintage Junior Suite</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2018年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail9'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/_E0A0284-2c.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>東京/入船　Vintage Superior Suite</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2018年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail10'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
 	            </div>
 
 
 
              <div class="seeAlltop">
-               <a href="<?= base_url('statics/roomIndex'); ?>"><p>全てを見る</p></a>
+               <a href="#"><p>全てを見る</p></a>
 	           </div>
         </section>
 
         <div class="footer">
-          <a href="<?= base_url('statics/index') ?>">
+          <a href="#">
             <div class="footer-logo">
 	            <img src="<?= base_url('static/images/component-02.png'); ?>">
             </div>
@@ -468,11 +405,11 @@
 
           <div class="footer-menu">
               <ul>
-		              <li><a href="<?= base_url('statics/about'); ?>">会社情報</a></li>
-		              <li><a href="<?= base_url('statics/roomIndex'); ?>">実績</a></li>
-		              <li><a href="<?= base_url('statics/fee'); ?>">料金例</a></li>
-		              <li><a href="<?= base_url('statics/flow'); ?>">フロー</a></li>
-		              <li><a href="<?= base_url('contact/index'); ?>">お問い合わせ</a></li>
+		              <li><a href="#">会社情報</a></li>
+		              <li><a href="#">実績</a></li>
+		              <li><a href="#">料金例</a></li>
+		              <li><a href="#">フロー</a></li>
+		              <li><a href="#">お問い合わせ</a></li>
 	            </ul>
           </div>
 
@@ -480,7 +417,7 @@
             <p>©LUPINUS 2019 ALL RIGHT RESERVED</p>
           </div>
         </div>
-      </div>
+      <div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -488,6 +425,8 @@
     <script src="<?= base_url('static/js/common.js'); ?>"></script>
     <script>
 
+
+    $(function(){
 
      $('.case-slider').slick({
        autoplay: true,
@@ -504,6 +443,7 @@
     }]
      });
 
+   });
 
     </script>
 </body>

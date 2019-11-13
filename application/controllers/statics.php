@@ -3,8 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Statics extends CI_Controller {
 
-        public function __construct(){
- 	  	parent::__construct();
+  public function __construct(){
+ 	  parent::__construct();
 		$this->load->helper('url');
 		$this->load->helper('form');
 		$this->load->helper('file');
@@ -20,6 +20,10 @@ class Statics extends CI_Controller {
   }
 
   public function roomIndex(){
+
+    $param['order_by'] = 'DESC';
+    $data['room'] = $this->
+
     $this->load->view('statics/roomIndex');
   }
 
@@ -62,6 +66,7 @@ class Statics extends CI_Controller {
   public function roomDetail10(){
     $this->load->view('statics/roomDetail10');
   }
+
 
   public function fee(){
     $this->load->view('statics/fee');
