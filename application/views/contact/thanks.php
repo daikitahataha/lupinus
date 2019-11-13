@@ -18,22 +18,22 @@
 <body>
   <div class="wrapper">
     <section id="header">
-          <a class="logo">
+          <a class="logo" href="<?= base_url('statics/index') ?>">
             <img src="<?= base_url('static/images/component.png'); ?>">
           </a>
 
         <div class="header_menu">
-            <ul>
-              <a href="#"><li class="menu_normal">会社情報</li></a>
-              <a href="#"><li class="menu_normal">実績</li></a>
-              <a href="#"><li class="menu_normal">料金例</li></a>
-              <a href="#"><li class="menu_normal">フロー</li></a>
-            </ul>
-            <div class="menu_inquiry">
-              <a href="#">
-                お問い合わせ
-              </a>
-            </div>
+          <ul>
+            <a href="<?= base_url('statics/about'); ?>"><li class="menu_normal">会社情報</li></a>
+            <a href="<?= base_url('statics/roomIndex'); ?>"><li class="menu_normal">実績</li></a>
+            <a href="<?= base_url('statics/fee'); ?>"><li class="menu_normal">料金例</li></a>
+            <a href="<?= base_url('statics/flow'); ?>"><li class="menu_normal">フロー</li></a>
+          </ul>
+          <div class="menu_inquiry">
+            <a href="<?= base_url('contact/index'); ?>">
+              お問い合わせ
+            </a>
+          </div>
         </div>
 
         <div class="sp_header_menu">
@@ -80,19 +80,19 @@
     </div>
 
     <div class="footer-roomIndex">
-      <a href="#">
+      <a href="<?= base_url('statics/index') ?>">
         <div class="footer-logo">
-           <img src="<?= base_url('static/images/component-02.png'); ?>">
+          <img src="<?= base_url('static/images/component-02.png'); ?>">
         </div>
       </a>
 
       <div class="footer-menu">
           <ul>
-              <li><a href="#">会社情報</a></li>
-              <li><a href="#">実績</a></li>
-              <li><a href="#">料金例</a></li>
-              <li><a href="#">フロー</a></li>
-              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="<?= base_url('statics/about'); ?>">会社情報</a></li>
+              <li><a href="<?= base_url('statics/roomIndex'); ?>">実績</a></li>
+              <li><a href="<?= base_url('statics/fee'); ?>">料金例</a></li>
+              <li><a href="<?= base_url('statics/flow'); ?>">フロー</a></li>
+              <li><a href="<?= base_url('contact/index'); ?>">お問い合わせ</a></li>
           </ul>
       </div>
 

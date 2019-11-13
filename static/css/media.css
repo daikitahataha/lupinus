@@ -426,6 +426,35 @@ input{
   font-size: 10px;
 }
 
+.feeContentdetail table tr td{
+  font-size: 12px;
+}
+
+.table01{
+  display: block;
+}
+
+.table-item {
+  width: 122px;
+}
+
+.table-item-value{
+  width: 250px;
+}
+
+.value-img{
+  width: 50%;
+  height: 50%;
+}
+
+.value-item{
+  font-size: 14px;
+}
+
+.value-numeric{
+  font-size: 40px;
+}
+
   .sp_display_none{
     display: none;
   }

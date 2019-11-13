@@ -17,23 +17,23 @@
 <body>
   <div class="wrapper">
     <section id="header">
-          <a class="logo">
+          <a class="logo" href="<?= base_url('statics/index') ?>">
               <img src="<?= base_url('static/images/component.png'); ?>">
           </a>
 
 
         <div class="header_menu">
-            <ul>
-              <a class="span_now" href="#"><li class="menu_normal">会社情報</li></a>
-              <a href="#"><li class="menu_normal">実績</li></a>
-              <a href="#"><li class="menu_normal">料金例</li></a>
-              <a href="#"><li class="menu_normal">フロー</li></a>
-            </ul>
-            <div class="menu_inquiry">
-              <a href="#">
-                お問い合わせ
-              </a>
-            </div>
+          <ul>
+            <a class="span_now" href="<?= base_url('statics/about'); ?>"><li class="menu_normal">会社情報</li></a>
+            <a href="<?= base_url('statics/roomIndex'); ?>"><li class="menu_normal">実績</li></a>
+            <a href="<?= base_url('statics/fee'); ?>"><li class="menu_normal">料金例</li></a>
+            <a href="<?= base_url('statics/flow'); ?>"><li class="menu_normal">フロー</li></a>
+          </ul>
+          <div class="menu_inquiry">
+            <a href="<?= base_url('contact/index'); ?>">
+              お問い合わせ
+            </a>
+          </div>
         </div>
 
         <div class="sp_header_menu">
@@ -45,22 +45,22 @@
         </div>
 
         <div class="menu-nav">
-      <p class="nav-item">
-        <a href="#" class="nav-link">会社情報</a>
-      </p>
-      <p class="nav-item">
-        <a href="#" class="nav-link">実績</a>
-      </p>
-      <p class="nav-item">
-        <a href="#" class="nav-link">料金例</a>
-      </p>
-      <p class="nav-item">
-        <a href="#" class="nav-link">フロー</a>
-      </p>
-      <p class="nav-item">
-        <a href="#" class="nav-link">お問い合わせ</a>
-      </p>
-    </div>
+            <p class="nav-item">
+              <a href="<?= base_url('static/about'); ?>" class="nav-link">会社情報</a>
+            </p>
+            <p class="nav-item">
+              <a href="<?= base_url('static/roomIndex'); ?>" class="nav-link">実績</a>
+            </p>
+            <p class="nav-item">
+              <a href="<?= base_url('static/fee'); ?>" class="nav-link">料金例</a>
+            </p>
+            <p class="nav-item">
+              <a href="<?= base_url('static/flow'); ?>" class="nav-link">フロー</a>
+            </p>
+            <p class="nav-item">
+              <a href="<?= base_url('contact/index'); ?>" class="nav-link">お問い合わせ</a>
+            </p>
+        </div>
     </section>
 
     <div class="about-title">
@@ -79,7 +79,7 @@
     　　　　　　<br>
               <br>
               ユーザーのライフスタイルへのこだわりが強まり、ニーズが多様化する現代では、
-              ホテル選びにおいても、画一的でないオリジナル性の高いの宿泊施設が求められます。
+              ホテル選びにおいても、画一的でないオリジナル性の高い宿泊施設が求められます。
               <br>
               <br>
               現在は、例え土地や建物を持っていなくても、お部屋さえあればホテル事業を実現できる時代になりました。
@@ -171,7 +171,7 @@
                     <p>
                       東京理科大学大学院卒業後、まちづくり/場づくりのためのカフェを開業。
                       その後HOMESを運営する（株）ネクストに入社。ジオ系サービスの新規事業やソーシャルメディア開発/SEO開発に従事する。
-                      その後、人材業・金融・不動産・EC・ブライダル等の業界でサービス設計、企画、設計、開発、マーケと
+                      その後、人材業・金融・不動産・EC・ブライダル等の業界でサービス設計、企画、開発、マーケと
                       それぞれのセグメントを担当し2013年に自身の会社であるFIELDを設立。
                       ５カ国でサービスや開発拠点を展開してきた。
                     </p>
@@ -204,19 +204,19 @@
     </section>
 
     <div class="footer">
-      <a href="#">
+      <a href="<?= base_url('statics/index') ?>">
         <div class="footer-logo">
-           <img src="<?= base_url('static/images/component-02.png'); ?>">
+          <img src="<?= base_url('static/images/component-02.png'); ?>">
         </div>
       </a>
 
       <div class="footer-menu">
           <ul>
-              <li><a href="#">会社情報</a></li>
-              <li><a href="#">実績</a></li>
-              <li><a href="#">料金例</a></li>
-              <li><a href="#">フロー</a></li>
-              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="<?= base_url('statics/about'); ?>">会社情報</a></li>
+              <li><a href="<?= base_url('statics/roomIndex'); ?>">実績</a></li>
+              <li><a href="<?= base_url('statics/fee'); ?>">料金例</a></li>
+              <li><a href="<?= base_url('statics/flow'); ?>">フロー</a></li>
+              <li><a href="<?= base_url('contact/index'); ?>">お問い合わせ</a></li>
           </ul>
       </div>
 

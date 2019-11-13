@@ -19,23 +19,23 @@
   <div class="wrapper">
 
     <section id="header">
-          <a class="logo">
+          <a class="logo" href="<?= base_url('statics/index') ?>">
               <img src="<?= base_url('static/images/component.png'); ?>">
           </a>
 
 
         <div class="header_menu">
-            <ul>
-                <a href="#"><li class="menu_normal">会社情報</li></a>
-                <a class="span_now" href="#"><li class="menu_normal">実績</li></a>
-                <a href="#"><li class="menu_normal">料金例</li></a>
-                <a href="#"><li class="menu_normal">フロー</li></a>
-            </ul>
-            <div class="menu_inquiry">
-              <a href="#">
-                お問い合わせ
-              </a>
-            </div>
+          <ul>
+            <a href="<?= base_url('statics/about'); ?>"><li class="menu_normal">会社情報</li></a>
+            <a class="span_now" href="<?= base_url('statics/roomIndex'); ?>"><li class="menu_normal">実績</li></a>
+            <a href="<?= base_url('statics/fee'); ?>"><li class="menu_normal">料金例</li></a>
+            <a href="<?= base_url('statics/flow'); ?>"><li class="menu_normal">フロー</li></a>
+          </ul>
+          <div class="menu_inquiry">
+            <a href="<?= base_url('contact/index'); ?>">
+              お問い合わせ
+            </a>
+          </div>
         </div>
 
         <div class="sp_header_menu">
@@ -47,22 +47,22 @@
         </div>
 
         <div class="menu-nav">
-      <p class="nav-item">
-        <a href="#" class="nav-link">会社情報</a>
-      </p>
-      <p class="nav-item">
-        <a href="#" class="nav-link">実績</a>
-      </p>
-      <p class="nav-item">
-        <a href="#" class="nav-link">料金例</a>
-      </p>
-      <p class="nav-item">
-        <a href="#" class="nav-link">フロー</a>
-      </p>
-      <p class="nav-item">
-        <a href="#" class="nav-link">お問い合わせ</a>
-      </p>
-    </div>
+            <p class="nav-item">
+              <a href="<?= base_url('static/about'); ?>" class="nav-link">会社情報</a>
+            </p>
+            <p class="nav-item">
+              <a href="<?= base_url('static/roomIndex'); ?>" class="nav-link">実績</a>
+            </p>
+            <p class="nav-item">
+              <a href="<?= base_url('static/fee'); ?>" class="nav-link">料金例</a>
+            </p>
+            <p class="nav-item">
+              <a href="<?= base_url('static/flow'); ?>" class="nav-link">フロー</a>
+            </p>
+            <p class="nav-item">
+              <a href="<?= base_url('contact/index'); ?>" class="nav-link">お問い合わせ</a>
+            </p>
+        </div>
     </section>
 
     <div class="about-title">
@@ -74,30 +74,36 @@
         <div class="room-index-flex">
             <div class="room-content">
                 <div class="room-content-img">
-                    <img src="<?= base_url('static/images/patrick-perkins-1.png'); ?>">
+                    <a href="<?= base_url('statics/roomDetailasakusa')  ?>">
+                      <img src="<?= base_url('static/images/DSC_0567.jpg'); ?>">
+                    </a>
                 </div>
                 <div class="room-content-tx">
-                    <p class="place">新宿御苑</p>
+                    <p class="place">東京/浅草</p>
+                    <p class="date">運営開始日：2019年10月</p>
+                </div>
+            </div>
+
+            <div class="room-content">
+                <div class="room-content-img">
+                  <a href="<?= base_url('statics/roomDetail2'); ?>">
+                    <img src="<?= base_url('static/images/booking_2019_10_29_157i.jpg'); ?>">
+                  </a>
+                </div>
+                <div class="room-content-tx">
+                    <p class="place">博多/春吉</p>
                     <p class="date">運営開始日：2019年11月</p>
                 </div>
             </div>
 
             <div class="room-content">
                 <div class="room-content-img">
-                    <img src="<?= base_url('static/images/patrick-perkins-1.png'); ?>">
+                  <a href="<?= base_url('statics/roomDetail3') ?>">
+                    <img src="<?= base_url('static/images/booking_2019_10_29_119c.jpg'); ?>">
+                  </a>
                 </div>
                 <div class="room-content-tx">
-                    <p class="place">浅草</p>
-                    <p class="date">運営開始日：2019年11月</p>
-                </div>
-            </div>
-
-            <div class="room-content">
-                <div class="room-content-img">
-                    <img src="<?= base_url('static/images/patrick-perkins-1.png'); ?>">
-                </div>
-                <div class="room-content-tx">
-                    <p class="place">浅草</p>
+                    <p class="place">博多/春吉</p>
                     <p class="date">運営開始日：2019年11月</p>
                 </div>
             </div>
@@ -106,34 +112,118 @@
         <div class="room-index-flex">
           <div class="room-content">
               <div class="room-content-img">
-                  <img src="<?= base_url('static/images/patrick-perkins-1.png'); ?>">
+                <a href="<?= base_url('statics/roomDetail4') ?>">
+                  <img src="<?= base_url('static/images/booking_2019_10_29_218c.jpg'); ?>">
+                </a>
               </div>
               <div class="room-content-tx">
-                  <p class="place">浅草</p>
+                  <p class="place">博多/春吉</p>
                   <p class="date">運営開始日：2019年11月</p>
               </div>
           </div>
 
           <div class="room-content">
               <div class="room-content-img">
-                  <img src="<?= base_url('static/images/patrick-perkins-1.png'); ?>">
+                <a href="<?= base_url('statics/roomDetail5') ?>">
+                  <img src="<?= base_url('static/images/booking_2019_10_29_26c.jpg'); ?>">
+                </a>
               </div>
               <div class="room-content-tx">
-                  <p class="place">浅草</p>
+                  <p class="place">博多/春吉</p>
                   <p class="date">運営開始日：2019年11月</p>
               </div>
           </div>
 
           <div class="room-content">
               <div class="room-content-img">
-                  <img src="<?= base_url('static/images/patrick-perkins-1.png'); ?>">
+                <a href="<?= base_url('statics/roomDetail6') ?>">
+                  <img src="<?= base_url('static/images/booking_2019_10_29_54c.jpg'); ?>">
+                </a>
               </div>
               <div class="room-content-tx">
-                  <p class="place">浅草</p>
+                  <p class="place">博多/春吉</p>
                   <p class="date">運営開始日：2019年11月</p>
               </div>
           </div>
         </div>
+
+        <div class="room-index-flex">
+          <div class="room-content">
+              <div class="room-content-img">
+                <a href="<?= base_url('statics/roomDetail7') ?>">
+                  <img src="<?= base_url('static/images/booking_2019_10_29_90c.jpg'); ?>">
+                </a>
+              </div>
+              <div class="room-content-tx">
+                  <p class="place">博多/春吉</p>
+                  <p class="date">運営開始日：2019年11月</p>
+              </div>
+          </div>
+
+          <div class="room-content">
+              <div class="room-content-img">
+                <a href="<?= base_url('statics/roomDetail8') ?>">
+                  <img src="<?= base_url('static/images/booking_2019_10_29_183c.jpg'); ?>">
+                </a>
+              </div>
+              <div class="room-content-tx">
+                  <p class="place">博多/春吉</p>
+                  <p class="date">運営開始日：2019年11月</p>
+              </div>
+          </div>
+
+          <div class="room-content">
+              <div class="room-content-img">
+                <a href="<?= base_url('statics/roomDetail9') ?>">
+                  <img src="<?= base_url('static/images/_E0A0284-2c.jpg'); ?>">
+                </a>
+              </div>
+              <div class="room-content-tx">
+                  <p class="place">東京/入船</p>
+                  <p class="date">運営開始日：2018年11月</p>
+              </div>
+          </div>
+        </div>
+
+        <div class="room-index-flex">
+          <div class="room-content last">
+              <div class="room-content-img">
+                <a href="<?= base_url('statics/roomDetail10')?>">
+                  <img src="<?= base_url('static/images/twin5_resizec.jpg'); ?>">
+                </a>
+              </div>
+              <div class="room-content-tx">
+                  <p class="place">東京/入船</p>
+                  <p class="date">運営開始日：2019年11月</p>
+              </div>
+          </div>
+
+          <div class="room-content" style="display: none;">
+              <div class="room-content-img">
+                <a href="#">
+                  <img src="<?= base_url('static/images/_E0A0284-2c.jpg'); ?>">
+                </a>
+              </div>
+              <div class="room-content-tx">
+                  <p class="place">浅草</p>
+                  <p class="date">運営開始日：2019年11月</p>
+              </div>
+          </div>
+
+          <div class="room-content" style="display: none;">
+              <div class="room-content-img">
+                <a href="">
+                  <img src="<?= base_url('static/images/_E0A0284-2c.jpg'); ?>">
+                </a>
+              </div>
+              <div class="room-content-tx">
+                  <p class="place">浅草</p>
+                  <p class="date">運営開始日：2019年11月</p>
+              </div>
+          </div>
+
+        </div>
+
 
         <a href="#">
           <div class="back-top">
@@ -143,19 +233,19 @@
     </section>
 
     <div class="footer-roomIndex">
-      <a href="#">
+      <a href="<?= base_url('statics/index') ?>">
         <div class="footer-logo">
-           <img src="<?= base_url('static/images/component-02.png'); ?>">
+          <img src="<?= base_url('static/images/component-02.png'); ?>">
         </div>
       </a>
 
       <div class="footer-menu">
           <ul>
-              <li><a href="#">会社情報</a></li>
-              <li><a href="#">実績</a></li>
-              <li><a href="#">料金例</a></li>
-              <li><a href="#">フロー</a></li>
-              <li><a href="#">お問い合わせ</a></li>
+              <li><a href="<?= base_url('statics/about'); ?>">会社情報</a></li>
+              <li><a href="<?= base_url('statics/roomIndex'); ?>">実績</a></li>
+              <li><a href="<?= base_url('statics/fee'); ?>">料金例</a></li>
+              <li><a href="<?= base_url('statics/flow'); ?>">フロー</a></li>
+              <li><a href="<?= base_url('contact/index'); ?>">お問い合わせ</a></li>
           </ul>
       </div>
 
