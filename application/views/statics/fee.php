@@ -374,7 +374,7 @@
                     </tr>
                     <tr>
                         <td class="table-item">面積</td>
-                        <td class="table-item-value">41.33㎡</td>
+                        <td class="table-item-value">21.4㎡</td>
                     </tr>
                     <tr>
                         <td class="table-item">向き</td>
@@ -412,7 +412,7 @@
           </div>
 
           <div class="result">
-            <p class="result-title">運営の結果</p>
+            <p class="result-title">運営の想定数値<br><span>※過去実績に基づく</span></p>
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
@@ -451,7 +451,7 @@
 
         <div class="feeContent01">
           <div class="feeContent01-title">
-            <p><span>CASE 04</span>&nbsp&nbsp東京/入船</p>
+            <p><span>CASE 05</span>&nbsp&nbsp東京/入船</p>
           </div>
 
           <div class="feeContent-img">
@@ -469,7 +469,7 @@
                     </tr>
                     <tr>
                         <td class="table-item">面積</td>
-                        <td class="table-item-value">41.33㎡</td>
+                        <td class="table-item-value">28.68㎡</td>
                     </tr>
                     <tr>
                         <td class="table-item">向き</td>

@@ -111,7 +111,7 @@
           <div class="flow_content_proccess_tx">
             <div class="tx_title">
               <p class="span">03</p>
-              <p class="span-tx-title">お部屋の審査を行わせていただきます</p>
+              <p class="span-tx-title">お部屋・ページ掲載の準備</p>
             </div>
             <div class="tx_lead">
               <p>審査を問題なく通過された場合、見積もりや料金にご納得いただけたら、オーナー様のお部屋の企画や掲載の準備に移ります。

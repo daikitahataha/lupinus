@@ -4,12 +4,20 @@ RewriteRule ^(.*)$ index.php?/$1 [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond $1 !^(index\.php|css|js|uploads|.+\.js$|.+\.png$|.+\.jpg$|robots\.txt)
-#RewriteCond $1 !^(index\.php|uploads/images|robots\.txt)
+RewriteCond $1 !^(index\.php|uploads/images|robots\.txt)
 RewriteRule ^(.*)$ index.php?/$1 [L]
 #AuthType Basic
 #AuthName "Input your ID and Password."
 #AuthUserFile /var/www/apps/musashi/.htpassword
 #require valid-user
+# メモリの上限
+php_value memory_limit 100M
+
+# 1度のアップロードファイル合計サイズ
+php_value post_max_size 100M
+
+# 1ファイルの最大サイズ
+php_value upload_max_filesize 20M
 
 
 #RewriteEngine On
@@ -22,4 +30,3 @@ RewriteRule ^(.*)$ index.php?/$1 [L]
 #AuthName "Input your ID and Password."
 #AuthUserFile /var/www/apps/musashi/.htpassword
 #require valid-user
-

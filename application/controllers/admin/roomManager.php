@@ -56,15 +56,27 @@ class roomManager extends Admin_abstract {
                 $config['upload_path'] = './uploads/images';
                 $path=$config['upload_path'];
                 $config['allowed_types'] = 'gif|jpg|jpeg|png';
-                $config['overwrite'] = TRUE;
                 $this->load->library('upload');
-
                 //fieldname is the form field name
+
+                $_FILES['image1']['cover_flg'] = 1;
+                $_FILES['image2']['cover_flg'] = 0;
+                $_FILES['image3']['cover_flg'] = 0;
+                $_FILES['image4']['cover_flg'] = 0;
+                $_FILES['image5']['cover_flg'] = 0;
+                $_FILES['image6']['cover_flg'] = 0;
+                $_FILES['image7']['cover_flg'] = 0;
+                $_FILES['image8']['cover_flg'] = 0;
+                $_FILES['image9']['cover_flg'] = 0;
+                $_FILES['image10']['cover_flg'] = 0;
+
                 foreach ($_FILES as $fieldname => $fileObject)
                 {
+
                     if (!empty($fileObject['name']))
                     {
                         $config['file_name'] = "room_id_".$res."_".$fileObject['name'];
+                        $config['cover_flg'] = $fileObject['cover_flg'];
                         $this->upload->initialize($config);
                         if (!$this->upload->do_upload($fieldname))
                         {
@@ -76,10 +88,14 @@ class roomManager extends Admin_abstract {
                         {
                             $param['id'] = $res;
                             $param['image_name'] = $config['file_name'];
+                            $param['image_number'] = $fieldname;
+                            $param['cover_flg'] = $config['cover_flg'];
+
                             $this->Bll_room->update_imagename($param);
                         }
                     }
                 }
+
                 redirect('admin/roomManager/thanks');
             }else{
                 $this ->create();
