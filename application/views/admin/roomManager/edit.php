@@ -23,17 +23,17 @@
     <p>ADR</p>
     <?php echo form_input('room_ADR',$room['room_ADR']);?><br>
     <?php echo form_error('room_ADR','<div class="error">',"</div>");?><br>
-    <p>画像</p>    
-    <?php echo form_upload($room['image1']);?><br>
-    <?php echo form_upload($room['image2']);?><br>
-    <?php echo form_upload($room['image3']);?><br>
-    <?php echo form_upload($room['image4']);?><br>
-    <?php echo form_upload($room['image5']);?><br>
-    <?php echo form_upload($room['image6']);?><br>
-    <?php echo form_upload($room['image7']);?><br>
-    <?php echo form_upload($room['image8']);?><br>
-    <?php echo form_upload($room['image9']);?><br>
-    <?php echo form_upload($room['image10']);?><br>
+    <p>画像</p>   
+    <?php echo form_upload('image1',$room['image1']);?><br>
+    <?php echo form_upload('image2',$room['image2']);?><br>
+    <?php echo form_upload('image3',$room['image3']);?><br>
+    <?php echo form_upload('image4',$room['image4']);?><br>
+    <?php echo form_upload('image5',$room['image5']);?><br>
+    <?php echo form_upload('image6',$room['image6']);?><br>
+    <?php echo form_upload('image7',$room['image7']);?><br>
+    <?php echo form_upload('image8',$room['image8']);?><br>
+    <?php echo form_upload('image9',$room['image9']);?><br>
+    <?php echo form_upload('image10',$room['image10']);?><br>
 
     <?php echo form_submit('','送信');?><br>
     <?php echo form_close();?><br>
