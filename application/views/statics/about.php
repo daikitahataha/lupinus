@@ -13,6 +13,25 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 
+<style>
+  .content02-inquiry{
+    width: 50%;
+  }
+
+  .line{
+    margin-top: initial;
+  }
+
+  @media only screen and (max-width: 500px){
+    .content02-inquiry{
+      width: 60%;
+    }
+
+    .content02-inquiry p{
+      margin-bottom: initial;
+    }
+  }
+</style>
 </head>
 <body>
   <div class="wrapper">
@@ -72,19 +91,17 @@
         <div class="about-mv-tx">
             <h2>MISSION</h2>
             <p>
-              ルピナスのミッションステートメントがあればここに入ります。
-              ルピナスのミッションステートメントがあればここに入ります。
-              ルピナスのミッションステートメントがあればここに入ります。
-              ルピナスのミッションステートメントがあればここに入ります。
-              ルピナスのミッションステートメントがあればここに入ります。
+              「ユーザーが自分のライフスタイルに合わせてホテルを選べるようになる世界」<br>
+              これがルピナスを運営する弊社が描いている世界観です。弊社はこれを、個性豊かなホテルを数多く作ることで
+              実現したいと考えています。
     　　　　　　<br>
               <br>
+              ユーザーのライフスタイルへのこだわりが強まり、ニーズが多様化する現代では、ホテル選びにおいても、
+              画一的でないオリジナル性の高い宿泊施設が求められます。
               <br>
-              ルピナスのミッションステートメントがあればここに入ります。
-              ルピナスのミッションステートメントがあればここに入ります。
-              ルピナスのミッションステートメントがあればここに入ります。
-              ルピナスのミッションステートメントがあればここに入ります。
-              ルピナスのミッションステートメントがあればここに入ります。
+              <br>
+              現在は、例え土地や建物を持っていなくても、お部屋さえあればホテル事業を実現できる時代になりました。
+              ルピナスではお持ちのお部屋で、ユーザーのニーズに応えられる「一室物の宿泊体験」を実現します。
             </p>
         </div>
     </section>
@@ -128,8 +145,16 @@
           </table>
     </section>
 
-    <section id="people">
-      <div class="people-title-wrap">
+    <section id="roomDetailinquiry">
+      <div class="content02-inquiry forDetail">
+          <a href="https://7garden.co.jp/index.php/statics_new/about">
+            <p class="content02-inquiry-button line">
+              会社情報の<br class="pc_display_none">詳細はこちら
+            </p>
+          </a>
+      </div>
+    </section>
+      <!--<div class="people-title-wrap">
          <p class="people-title">PEOPLE</p>
       </div>
 
@@ -201,8 +226,8 @@
                   </div>
               </div>
           </div>
-      </div>
-    </section>
+      </div>-->
+
 
     <div class="footer">
       <a href="#">
