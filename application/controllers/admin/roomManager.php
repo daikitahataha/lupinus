@@ -87,6 +87,7 @@ class roomManager extends Admin_abstract {
         }
     }
 
+//一旦ここに
 
     public function edit($id){
         if(empty($id)) {
