@@ -696,10 +696,21 @@ html{
 
 .room_flex{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .room_index_content{
-  
+  width: 30%;
+  margin: 0 auto 5% 0;
+}
+
+.room-index-content-img{
+  width: 100%;
+}
+
+.room-index-content-img img{
+  width: 100%;
+
 }
 
 .room-index-flex{
