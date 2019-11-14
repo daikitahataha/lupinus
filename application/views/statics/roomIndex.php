@@ -69,24 +69,27 @@
        <p>OUR ROOMS</p>
        <h2>実績</h2>
     </div>
+<section id="room-index">
+    <div class="room_flex">
 
-    <div class="room-content">
-        <?php foreach($data as $key => $val){ ?>
-
+        <?php foreach($room as $key => $val){ ?>
+      <div class="room_index_content">
         <div class="room-content-img">
             <a href="<?= base_url('statics/roomDetail/' . $val['id']); ?>">
-              <img src="<?= show_room_images($val['images']); ?>">
+
+              <img src="<?= show_room_images($room[$key]['name']); ?>">
             </a>
         </div>
         <div class="room-content-tx">
             <p class="place"><?= $val['place']; ?></p>
             <p class="date">運営開始日：<?= $val['start_date']; ?></p>
         </div>
-
+      </div>
       <?php } ?>
-    </div>
 
-    <section id="room-index">
+  </div>
+
+
         <div class="room-index-flex">
             <div class="room-content">
                 <div class="room-content-img">

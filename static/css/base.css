@@ -694,6 +694,14 @@ html{
   padding:0 10%;
 }
 
+.room_flex{
+  display: flex;
+}
+
+.room_index_content{
+  
+}
+
 .room-index-flex{
   display: flex;
   margin-bottom: 7%;

@@ -7,8 +7,8 @@ class Bll_room extends MY_Model{
         $this->load->model('dal/Dal_room');
     }
 
-    public function get_room_index($param){
-        $ret = $this->Dal_room->dal_get_room_index($param);
+    public function get_room_index(){
+        $ret = $this->Dal_room->dal_get_room_index();
 
         return $ret;
     }
@@ -31,6 +31,8 @@ class Bll_room extends MY_Model{
 
         $data['room_id'] = $param['id'];
         $data['name'] = $param['image_name'];
+        $data['cover_flg'] = $param['cover_flg'];
+
         $ret = $this->db->insert('room_images',$data);
         return $ret;
 	 }
@@ -44,6 +46,17 @@ class Bll_room extends MY_Model{
     return $ret;
   }
 
+  public function get_next_url_name($base_id){
+    $ret = $this->Dal_room->dal_get_next_url_name($base_id);
+
+    return $ret;
+  }
+
+  public function get_back_url_name($base_id){
+    $ret = $this->Dal_room->dal_get_back_url_name($base_id);
+
+    return $ret;
+  }
 
 
 
