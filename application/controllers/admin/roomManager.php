@@ -88,8 +88,13 @@ class roomManager extends Admin_abstract {
     }
 
 
-    public function edit(){
-        $this->load->view('admin/roomManager/edit');
+    public function edit($id){
+        if(empty($id)) {
+            redirect('admin/roomManager/index');
+        }
+        $this->load->model('bll/Bll_room');
+        $res['room'] = $this->Bll_room->get_detail($id);
+        $this->load->view('admin/roomManager/edit',$res);
     }
 
     public function update(){
