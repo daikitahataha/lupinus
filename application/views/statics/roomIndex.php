@@ -74,7 +74,7 @@
 
         <?php foreach($room as $key => $val){ ?>
       <div class="room_index_content">
-        <div class="room-content-img">
+        <div class="room-index-content-img">
             <a href="<?= base_url('statics/roomDetail/' . $val['id']); ?>">
 
               <img src="<?= show_room_images($room[$key]['name']); ?>">
