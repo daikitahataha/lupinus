@@ -7,8 +7,8 @@ class Bll_room extends MY_Model{
         $this->load->model('dal/Dal_room');
     }
 
-    public function get_room_index(){
-        $ret = $this->Dal_room->dal_get_room_index();
+    public function get_room_index($param){
+        $ret = $this->Dal_room->dal_get_room_index($param);
 
         return $ret;
     }
@@ -26,42 +26,44 @@ class Bll_room extends MY_Model{
 
 	}
 
+    public function update_data($post){
+        if(!empty($post['place']) and !empty($post['start_date']) and !empty($post['room_name']) and !empty($post['room_addreess']) and !empty($post['room_ADR'])) {
+            //部屋情報の更新
+            $this->db->set('place',$post['place']);
+            $this->db->set('start_date',$post['start_date']);
+            $this->db->set('room_name',$post['room_name']);
+            $this->db->set('room_addreess',$post['room_addreess']);
+            $this->db->set('room_ADR',$post['room_ADR']);
+            $this->db->where('id',$post['id']);
+            $res = $this->db->update('room');
+
+            //画像情報の更新            
+            $this->db->set('place',$post['place']);
+            $this->db->set('start_date',$post['start_date']);
+            $this->db->set('room_name',$post['room_name']);
+            $this->db->set('room_addreess',$post['room_addreess']);
+            $this->db->set('room_ADR',$post['room_ADR']);
+            $this->db->where('id',$post['id']);
+            $res2 = $this->db->update('room');
+
+            //２件とも正常終了ならTRUEを返す
+            if ($res & $res2) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
+    }
 
     public function update_imagename($param){
 
         $data['room_id'] = $param['id'];
         $data['name'] = $param['image_name'];
-        $data['cover_flg'] = $param['cover_flg'];
-
         $ret = $this->db->insert('room_images',$data);
         return $ret;
 	 }
-
-
-
-  public function get_room_detail($id){
-    $ret = $this->Dal_room->dal_get_room_detail($id);
-
-
-    return $ret;
-  }
-
-  public function get_next_url_name($base_id){
-    $ret = $this->Dal_room->dal_get_next_url_name($base_id);
-
-    return $ret;
-  }
-
-  public function get_back_url_name($base_id){
-    $ret = $this->Dal_room->dal_get_back_url_name($base_id);
-
-    return $ret;
-  }
-
-
-
-
-
 }
 
 ?>

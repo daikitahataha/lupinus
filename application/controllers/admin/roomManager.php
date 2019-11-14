@@ -103,13 +103,32 @@ class roomManager extends Admin_abstract {
         }
     }
 
+//一旦ここに
 
-    public function edit(){
-        $this->load->view('admin/roomManager/edit');
+    public function edit($id){
+        if(empty($id)) {
+            redirect('admin/roomManager/index');
+        }
+        $this->load->model('bll/Bll_room');
+        $res['room'] = $this->Bll_room->get_detail($id);
+dd($res);
+        $this->load->view('admin/roomManager/edit',$res);
     }
 
     public function update(){
-        $this->load->view('admin/roomManager/update');
+        $post = $this->input->post();
+        if(!empty($post['id'])) {
+            $id = $post['id'];
+        } else {
+            $this->index();
+        }
+        $this->load->model('bll/Bll_room');
+        $res = $this->Bll_room->update_data($post);
+        if($res) {
+            redirect('admin/roomManager/thanks');
+        } else {
+            $this->edit($post['id']);
+        }
     }
 
     public function delete(){
