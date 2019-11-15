@@ -7,8 +7,8 @@ class Bll_room extends MY_Model{
         $this->load->model('dal/Dal_room');
     }
 
-    public function get_room_index($param){
-        $ret = $this->Dal_room->dal_get_room_index($param);
+    public function get_room_index(){
+        $ret = $this->Dal_room->dal_get_room_index();
 
         return $ret;
     }
@@ -37,7 +37,7 @@ class Bll_room extends MY_Model{
             $this->db->where('id',$post['id']);
             $res = $this->db->update('room');
 
-            //画像情報の更新            
+            //画像情報の更新
             $this->db->set('place',$post['place']);
             $this->db->set('start_date',$post['start_date']);
             $this->db->set('room_name',$post['room_name']);
@@ -64,6 +64,25 @@ class Bll_room extends MY_Model{
         $ret = $this->db->insert('room_images',$data);
         return $ret;
 	 }
+
+   public function get_room_detail($id){
+      $res = $this->Dal_room->dal_get_room_detail($id);
+
+      return $res;
+   }
+
+   public function get_next_url_name($base_id){
+      $res = $this->Dal_room->dal_get_next_url_name($base_id);
+
+      return $res;
+   }
+
+   public function get_back_url_name($base_id){
+      $res = $this->Dal_room->dal_get_back_url_name($base_id);
+
+      return $res;
+   }
+
 }
 
 ?>
