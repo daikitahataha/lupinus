@@ -242,7 +242,7 @@
                 <h2>「ルピナス」のメリット</h2>
              </div>
 
-             <div class="content03-title">
+             <div class="content03-title css_selector-top">
  		            <img src="<?= base_url('static/images/tick-inside-circle.png'); ?>">
                 <p>部屋づくりから運営まで、<br class="pc_display_none">全部丸投げOK</p>
 	           </div>
@@ -260,7 +260,7 @@
 	           </div>
 
 
-             <div class="content03-title2">
+             <div class="content03-title2 css_selector-top">
  		            <img src="<?= base_url('static/images/tick-inside-circle.png'); ?>">
                 <p>圧倒的な集客力=利益確保</p>
 	           </div>
@@ -276,7 +276,7 @@
 	           </div>
 
 
-             <div class="content03-title3">
+             <div class="content03-title3 css_selector-top">
  		            <img src="<?= base_url('static/images/tick-inside-circle.png'); ?>">
                 <p>丁寧&手厚いサポート</p>
 	           </div>
