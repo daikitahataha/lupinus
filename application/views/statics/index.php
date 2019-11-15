@@ -307,156 +307,24 @@
              </div>
 
              <div class="case-slider">
+               <?php foreach($room as $key => $val){ ?>
                  <div class="case">
 		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/DSC_0567c.jpg'); ?>">
+		                     <img src="<?= show_room_images($room[$key]['name']); ?>">
                      </div>
                      <div class="case-title">
- 		                    <p>浅草　SEVENGARDEN</p>
+ 		                    <p><?= $val['place']; ?>　<?= $val['room_name']; ?></p>
 		                 </div>
   		               <div class="case-detail-top">
-		                     <p>運営開始日：2019年10月</p>
+		                     <p>運営開始日：<?= $val['start_date']; ?></p>
 		                     <!--<p class="benefit">利益率：30%</p>-->
 		                 </div>
 
-                     <a href="<?= base_url('statics/roomDetailasakusa'); ?>"><p class="seeCase">このケースを見る</p></a>
+                     <a href="<?= base_url('statics/roomDetail/' . $val['id']); ?>"><p class="seeCase">このケースを見る</p></a>
 		             </div>
+              <?php } ?>
 
-                 <div class="case">
-		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/booking_2019_10_29_157c.jpg'); ?>">
-                   </div>
-                   <div class="case-title">
- 		                  <p>博多/春吉　Mei Penthouse</p>
-		                </div>
-  		              <div class="case-detail-top">
-                      <p>運営開始日：2019年11月</p>
-                      <!--<p class="benefit">利益率：30%</p>-->
-		                </div>
-
-                   <a href="<?= base_url('statics/roomDetail2'); ?>"><p class="seeCase">このケースを見る</p></a>
-		             </div>
-
-
-                 <div class="case">
-		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/booking_2019_10_29_119c.jpg'); ?>">
-                     </div>
-                     <div class="case-title">
- 		                    <p>博多/春吉　Mei Suite</p>
-		                  </div>
-  		                <div class="case-detail-top">
-                        <p>運営開始日：2019年11月</p>
-                        <!--<p class="benefit">利益率：30%</p>-->
-		                  </div>
-
-                      <a href="<?= base_url('statics/roomDetail3'); ?>"><p class="seeCase">このケースを見る</p></a>
-		              </div>
-
-                 <div class="case">
-		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/booking_2019_10_29_218c.jpg'); ?>">
-                   </div>
-                   <div class="case-title">
- 		                  <p>博多/春吉　Mei Exective</p>
-		               </div>
-  		             <div class="case-detail-top">
-                     <p>運営開始日：2019年11月</p>
-                     <!--<p class="benefit">利益率：30%</p>-->
-		               </div>
-
-                   <a href="<?= base_url('statics/roomDetail4'); ?>"><p class="seeCase">このケースを見る</p></a>
-		             </div>
-
-                 <div class="case">
-		                 <div class="case-img">
-		                     <img src="<?= base_url('static/images/booking_2019_10_29_54c.jpg'); ?>">
-                     </div>
-                     <div class="case-title">
- 		                    <p>博多/春吉　Mei Standard Twin</p>
-		                 </div>
-  		               <div class="case-detail-top">
-                       <p>運営開始日：2019年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
-		                 </div>
-
-                     <a href="<?= base_url('statics/roomDetail6'); ?>"><p class="seeCase">このケースを見る</p></a>
-		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/booking_2019_10_29_26c.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>博多/春吉　Mei Atrium</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2019年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail5'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/booking_2019_10_29_90c.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>博多/春吉　Mei Standard Sofa</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2019年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail7'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/booking_2019_10_29_183c.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>博多/春吉　Mei Standard</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2019年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail8'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/twin5_resizec.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>東京/入船　Vintage Junior Suite</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2018年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail9'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
-
-                  <div class="case">
- 		                 <div class="case-img">
- 		                     <img src="<?= base_url('static/images/_E0A0284-2c.jpg'); ?>">
-                      </div>
-                      <div class="case-title">
-  		                    <p>東京/入船　Vintage Superior Suite</p>
- 		                 </div>
-   		               <div class="case-detail-top">
-                       <p>運営開始日：2018年11月</p>
-                       <!--<p class="benefit">利益率：30%</p>-->
- 		                 </div>
-
-                      <a href="<?= base_url('statics/roomDetail10'); ?>"><p class="seeCase">このケースを見る</p></a>
- 		              </div>
+                 
 	            </div>
 
 

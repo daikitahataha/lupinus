@@ -92,7 +92,7 @@
     <section id="roomDetailcontent">
         <div class="roomDetailcontent-tx">
           <p>
-              <?= $room[0]['start_date'] . '、' . $room[0]['room_ADR']. '、' . 'LUPINUS内装' ?>
+              <?= $room[0]['start_date'] . '、' . 'ADR'.$room[0]['room_ADR']. '、' . 'LUPINUS内装' ?>
           </p>
         </div>
 
