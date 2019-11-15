@@ -50,7 +50,6 @@ class Contact extends CI_Controller {
 
       $post = $this->input->post();
 
-
       $check_post = check_param($post);
 
       $this->load->library('parser');

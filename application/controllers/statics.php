@@ -10,16 +10,10 @@ class Statics extends CI_Controller {
 		$this->load->helper('file');
     $this->load->model('bll/Bll_room');
     $this->load->helper('common');
-    $this->load->driver('cache', array(
-      'adapter' => 'memcached',
-      //'adapter' => 'file'
-      )
-    );
+
 	}
 
 	public function index(){
-    var_dump($this->cache->cache_info());
-
 		$this->load->view('statics/index');
 	}
 
@@ -36,18 +30,38 @@ class Statics extends CI_Controller {
 
   public function roomDetail($id){
 
-    $data['room'] = $this->Bll_room->get_room_detail($id);
-    $data['room'][0]['next_url'] = return_next_url($id);
-    $data['room'][0]['back_url'] = return_back_url($id);
+    $this->load->driver('cache', array(
+      'adapter' => 'memcached',
+      //'adapter' => 'file'
+      )
+    );
 
-    $base_id['next_id'] = return_next_id($id);
-    $base_id['back_id'] = return_back_id($id);
+    if(!empty($this->cache->get('room_id_'. $id))){
+      $this->cache->get('room_id_' . $id);
+      //$data['room'] = $this->cache->get('room_id_'. $id);
+    }else{
 
-    $data['room'][0]['next_url_name'] = $this->Bll_room->get_next_url_name($base_id);
-    $data['room'][0]['back_url_name'] = $this->Bll_room->get_back_url_name($base_id);
+      $data['room'] = $this->Bll_room->get_room_detail($id);
+      $data['room'][0]['next_url'] = return_next_url($id);
+      $data['room'][0]['back_url'] = return_back_url($id);
 
-    /*$this->cache->save($id, $data['room'], 600);
-    $my_data = $this->cache->get($id);*/
+      $base_id['next_id'] = return_next_id($id);
+      $base_id['back_id'] = return_back_id($id);
+
+      $data['room'][0]['next_url_name'] = $this->Bll_room->get_next_url_name($base_id);
+      $data['room'][0]['back_url_name'] = $this->Bll_room->get_back_url_name($base_id);
+
+      $this->cache->save('room_id_' . $id, $data['room']);
+
+      /*if($this->cache->save('room_id_' . $id, $data['room'])){
+        echo 'saveしました';
+        exit;
+      }else{
+        echo '失敗しました';
+        exit;
+      }*/
+
+    }
 
     $this->load->view('statics/roomDetail', $data);
 

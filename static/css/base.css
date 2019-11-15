@@ -13,7 +13,7 @@
 /* header */
 
 *{
-  font-family: 'Noto Sans JP';
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 html{
@@ -336,35 +336,35 @@ html{
 
 .content03-title{
   display: flex;
-  width: 400px;
+  width: 430px;
   margin: 0 auto;
 }
 
 .content03-title2{
   display: flex;
-  width: 265px;
+  width: 300px;
   margin: 0 auto;
 }
 
 .content03-title3{
   display: flex;
-  width: 235px;
+  width: 250px;
   margin: 0 auto;
 }
 .content03-title img{
-  width: 30px;
+  width: 45px;
   margin: 0 auto;
 }
 
 
 .content03-title2 img{
-  width: 30px;
+  width: 45px;
   margin: 0 auto;
 }
 
 
 .content03-title3 img{
-  width: 30px;
+  width: 45px;
   margin: 0 auto;
 }
 
@@ -492,6 +492,23 @@ html{
 }
 .next-allow{
     right: 80px;
+}
+
+@media screen and (min-color-index:0)
+and(-webkit-min-device-pixel-ratio:0) { @media
+{
+    .content03-title {
+        width: 450px;
+    }
+}}
+
+
+_::-webkit-full-page-media, _:future, :root .css_selector-top {
+    width: 450px;
+}
+
+_::-webkit-full-page-media, _:future, :root .css_selector-top img {
+    width: 45px;
 }
 
 /* About */
@@ -706,11 +723,12 @@ html{
 
 .room-index-content-img{
   width: 100%;
+  height: 75%;
 }
 
 .room-index-content-img img{
   width: 100%;
-
+  height: 100%;
 }
 
 .room-index-flex{
@@ -739,10 +757,11 @@ html{
   margin-top: 5%;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Noto+Sans+JP'); /*追加*/
 .place{
   line-height: 2em;
   letter-spacing: 0.2em;
-  font-family: 'Noto Sans japanese';
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400;
   font-size: 18px;
 }

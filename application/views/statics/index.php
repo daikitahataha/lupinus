@@ -3,8 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=400">
-    <title>lupinus</title>
+    <title>︎LUPINUS｜あなたの部屋を、ホテルに</title>
+    <meta name="description" content="例え土地や建物を持っていなくても、お部屋さえあればホテル事業を実現できる時代になりました。ユーザーのライフスタイルへのこだわりが強まり、ニーズが多様化する現代では、ホテル選びにおいても、画一的でないオリジナル性の高い宿泊施設が求められます。7gardenは個性豊かなホテルを数多く作ることで「ユーザーが自分のライフスタイルに合わせてホテルを選べるようになる世界」を実現したいと考えています。ルピナスではお持ちのお部屋で、ユーザーのニーズに応えらえれる「一室物の宿泊体験」を実現します。">
+    <meta name="keywords" content="ホテル 宿泊 体験 ホテル運営 宿泊施設">
+    <meta property="og:title" content="LUPINUS｜あなたの部屋を、ホテルに"/>
+    <meta property="og:site_name" content="LUPINUS｜あなたの部屋を、ホテルに" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="例え土地や建物を持っていなくても、お部屋さえあればホテル事業を実現できる時代になりました。ユーザーのライフスタイルへのこだわりが強まり、ニーズが多様化する現代では、
+                  ホテル選びにおいても、画一的でないオリジナル性の高い宿泊施設が求められます。7gardenは個性豊かなホテルを数多く作ることで「ユーザーが自分のライフスタイルに合わせてホテルを選べるようになる世界」を実現したいと考えています。
+                  ルピナスではお持ちのお部屋で、ユーザーのニーズに応えらえれる「一室物の宿泊体験」を実現します。" />
 
+    <link rel="shortcut icon" href="https://s3.ap-northeast-1.amazonaws.com/sevengarden/image/4/SEVENGARDEN-component-02-1573785425.png">
     <link rel="stylesheet" href="<?= base_url('static/css/base.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('static/css/media.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('static/css/reset.css'); ?>">
@@ -28,21 +37,21 @@
 <body>
     <div class="wrapper">
       <section id="header">
-            <a class="logo">
+            <a class="logo" href="<?= base_url('statics/index'); ?>">
 	            <img src="<?= base_url('static/images/component.png'); ?>">
             </a>
 
           <div class="header_menu">
-              <ul>
-                <a href="#"><li class="menu_normal">会社情報</li></a>
-                <a href="#"><li class="menu_normal">実績</li></a>
-                <a href="#"><li class="menu_normal">料金例</li></a>
-                <a href="#"><li class="menu_normal">フロー</li></a>
-	            </ul>
-              <div class="menu_inquiry">
-                <a href="#">
-                  お問い合わせ
-                </a>
+            <ul>
+              <a href="<?= base_url('statics/about'); ?>"><li class="menu_normal">会社情報</li></a>
+              <a href="<?= base_url('statics/roomIndex'); ?>"><li class="menu_normal">実績</li></a>
+              <a href="<?= base_url('statics/fee'); ?>"><li class="menu_normal">料金例</li></a>
+              <a href="<?= base_url('statics/flow'); ?>"><li class="menu_normal">フロー</li></a>
+            </ul>
+            <div class="menu_inquiry">
+              <a href="<?= base_url('contact/index'); ?>">
+                お問い合わせ
+              </a>
               </div>
  	        </div>
 
@@ -55,22 +64,22 @@
  	        </div>
 
           <div class="menu-nav">
-        <p class="nav-item">
-          <a href="#" class="nav-link">会社情報</a>
-        </p>
-        <p class="nav-item">
-          <a href="#" class="nav-link">実績</a>
-        </p>
-        <p class="nav-item">
-          <a href="#" class="nav-link">料金例</a>
-        </p>
-        <p class="nav-item">
-          <a href="#" class="nav-link">フロー</a>
-        </p>
-        <p class="nav-item">
-          <a href="#" class="nav-link">お問い合わせ</a>
-        </p>
-      </div>
+              <p class="nav-item">
+                <a href="<?= base_url('statics/about'); ?>" class="nav-link">会社情報</a>
+              </p>
+              <p class="nav-item">
+                <a href="<?= base_url('statics/roomIndex'); ?>" class="nav-link">実績</a>
+              </p>
+              <p class="nav-item">
+                <a href="<?= base_url('statics/fee'); ?>" class="nav-link">料金例</a>
+              </p>
+              <p class="nav-item">
+                <a href="<?= base_url('statics/flow'); ?>" class="nav-link">フロー</a>
+              </p>
+              <p class="nav-item">
+                <a href="<?= base_url('contact/index'); ?>" class="nav-link">お問い合わせ</a>
+              </p>
+          </div>
       </section>
 
       <section id="top-mv">
@@ -97,8 +106,7 @@
 		                    ホテル事業をやっていける今の時代。
                         <br>
 		                    <br>
-		                    民泊より少しワンランクアップした<br class="pc_display_none">
-                        ホテルを残したい。
+		                    民泊より少しワンランクアップした<br class="pc_display_none">ホテルを残したい。
 		                    <br class="sp_display_none">
 		                    たくさんの人たちに<br class="pc_display_none">ステイしてもらい、喜んでもらいたい。
                         <br>
@@ -131,7 +139,7 @@
                       </div>
                       <div class="content-flex-lead-tx">
                           <p>
-		                          現在は消費者のライフスタイルやニーズの変化が著しい時代。そんな時代にこそ、
+		                          現在は消費者のライフスタイルやニーズの変化が激しい時代。そんな時代にこそ、
                               ターゲットに合わせたデザインが求められます。写真と価格において比較されるホテル予約サイトにおいて、
                               ルピナスは洗練された客室デザインによって、価格競争に巻き込まれない、高単価のプライス設計を実現します。
                           </p>
@@ -223,7 +231,7 @@
 
               <div class="content02-inquiry">
                   <p class="inquiry-tx">まずはお気軽にお問い合わせください</p>
-		              <a href="#"><p class="content02-inquiry-button">お問い合わせ</p></a>
+		              <a href="<?= base_url('contact/index'); ?>"><p class="content02-inquiry-button">お問い合わせ</p></a>
               </div>
 
         </section>
@@ -288,7 +296,7 @@
 
               <div class="content02-inquiry">
                   <p class="inquiry-tx">まずはお気軽にお問い合わせください</p>
-		              <a href="#"><p class="content02-inquiry-button">お問い合わせ</p></a>
+		              <a href="<?= base_url('contact/index'); ?>"><p class="content02-inquiry-button">お問い合わせ</p></a>
               </div>
         </section>
 
@@ -459,20 +467,20 @@
         </section>
 
         <div class="footer">
-          <a href="#">
+          <a href="<?= base_url('statics/index'); ?>">
             <div class="footer-logo">
 	            <img src="<?= base_url('static/images/component-02.png'); ?>">
             </div>
           </a>
 
           <div class="footer-menu">
-              <ul>
-		              <li><a href="#">会社情報</a></li>
-		              <li><a href="#">実績</a></li>
-		              <li><a href="#">料金例</a></li>
-		              <li><a href="#">フロー</a></li>
-		              <li><a href="#">お問い合わせ</a></li>
-	            </ul>
+            <ul>
+                <li><a href="<?= base_url('statics/about'); ?>">会社情報</a></li>
+                <li><a href="<?= base_url('statics/roomIndex'); ?>">実績</a></li>
+                <li><a href="<?= base_url('statics/fee'); ?>">料金例</a></li>
+                <li><a href="<?= base_url('statics/flow'); ?>">フロー</a></li>
+                <li><a href="<?= base_url('contact/index'); ?>">お問い合わせ</a></li>
+            </ul>
           </div>
 
           <div class="footer-copyright">

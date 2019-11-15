@@ -13,9 +13,9 @@ LUPINUSからお問い合わせがありました。<br>
 
 検討物件戸数: <?= $number; ?><br><br>
 
-許認可状況: <?= $authorization; ?>
+許認可状況: <?= $authorization; ?><br><br>
 
-権利状況: <?= $right; ?>
+権利状況: <?= $right; ?><br><br>
 
 面積: <?= $area; ?><br><br>
 
