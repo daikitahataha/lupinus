@@ -10,6 +10,7 @@ class Bll_email extends MY_model{
     $from = $this->config->item('from');
     $name = $this->config->item('from_name');
 
+    $this->email->from($from, $name);
     if(is_array($email) && !empty($email)){
 	$email = implode(',', $email);
     }
@@ -20,8 +21,6 @@ class Bll_email extends MY_model{
     $this->email->message($message);
 
     $res = $this->email->send();
-
-    dd($res);
 
     return $res;
 

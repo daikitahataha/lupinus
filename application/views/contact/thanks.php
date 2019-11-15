@@ -78,8 +78,8 @@
     </div>
 
     <div class="thanks-tx">
-      <p>お問い合わせの送信は完了しました。こちらからご連絡を差し上げます。
-        <br>
+      <p>お問い合わせの送信は完了しました。<br class="pc_display_none">こちらからご連絡を差し上げます。
+        <br class="sp_display_none">
         しばらくお待ちください。
       </p>
     </div>

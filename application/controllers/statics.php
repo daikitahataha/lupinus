@@ -29,14 +29,17 @@ class Statics extends CI_Controller {
     $this->load->view('statics/roomIndex', $data);
   }
 
-  public function roomDetail($id){
+  public function roomDetail($id)
+  {
 
     $this->load->driver('cache', array('adapter' => 'memcached'));
 
-    if(!empty($this->cache->get('room_id_'. $id))){
+    dd($this->cache->memcached->get('room_id_' . $id));
+
+    if (!empty($this->cache->get('room_id_'. $id))) {
       $data = $this->cache->get('room_id_' . $id);
-      //$data['room'] = $this->cache->get('room_id_'. $id);
-    }else{
+      dd($data);
+    } else {
 
       $data['room'] = $this->Bll_room->get_room_detail($id);
       $data['room'][0]['next_url'] = return_next_url($id);

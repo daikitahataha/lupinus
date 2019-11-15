@@ -487,6 +487,14 @@ input{
   margin: 10% 0;
 }
 
+.thanks-title h2{
+  font-size: 24px;
+}
+
+.thanks-top{
+  width: 30%;
+}
+
   .sp_display_none{
     display: none;
   }
