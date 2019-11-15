@@ -68,7 +68,7 @@ font-face{
 
 
 
-@media only screen and (max-width:500px){
+@media only screen and (max-width:600px){
 
   #top-mv{
     height: 300px;
@@ -453,6 +453,38 @@ input{
 
 .value-numeric{
   font-size: 40px;
+}
+
+.room_flex{
+  display: block;
+}
+
+.room_index_content{
+  width: 80%;
+  margin: 0 auto 10% auto;
+}
+
+.detailTable-flex{
+  width: 100%;
+  padding: 0 5%;
+}
+
+.table-item{
+  width: 140px;
+}
+
+.table-item-value{
+  width: 299px;
+}
+
+.room_info_title{
+  margin: 8% 0 5% 0;
+  font-size: 12px;
+  padding-left: 5%;
+}
+
+.feePrice{
+  margin: 10% 0;
 }
 
   .sp_display_none{

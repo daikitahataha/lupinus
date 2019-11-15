@@ -3,7 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>lupinus</title>
+    <title>︎LUPINUS｜あなたの部屋を、ホテルに</title>
+    <meta name="description" content="例え土地や建物を持っていなくても、お部屋さえあればホテル事業を実現できる時代になりました。ユーザーのライフスタイルへのこだわりが強まり、ニーズが多様化する現代では、ホテル選びにおいても、画一的でないオリジナル性の高い宿泊施設が求められます。7gardenは個性豊かなホテルを数多く作ることで「ユーザーが自分のライフスタイルに合わせてホテルを選べるようになる世界」を実現したいと考えています。ルピナスではお持ちのお部屋で、ユーザーのニーズに応えらえれる「一室物の宿泊体験」を実現します。">
+    <meta name="keywords" content="ホテル 宿泊 体験 ホテル運営 宿泊施設">
+    <meta property="og:title" content="LUPINUS｜あなたの部屋を、ホテルに"/>
+    <meta property="og:site_name" content="LUPINUS｜あなたの部屋を、ホテルに" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="例え土地や建物を持っていなくても、お部屋さえあればホテル事業を実現できる時代になりました。ユーザーのライフスタイルへのこだわりが強まり、ニーズが多様化する現代では、
+                  ホテル選びにおいても、画一的でないオリジナル性の高い宿泊施設が求められます。7gardenは個性豊かなホテルを数多く作ることで「ユーザーが自分のライフスタイルに合わせてホテルを選べるようになる世界」を実現したいと考えています。
+                  ルピナスではお持ちのお部屋で、ユーザーのニーズに応えらえれる「一室物の宿泊体験」を実現します。" />
+
 
     <link rel="stylesheet" href="<?= base_url('static/css/base.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('static/css/media.css'); ?>">
@@ -109,7 +118,7 @@
           <input type="radio" name="authorization" value="1"><p class="choice">特になし</p><br>
           <input type="radio" name="authorization" value="2"><p class="choice">旅館・ホテル（旅館業法）</p><br>
           <input type="radio" name="authorization" value="3"><p class="choice">簡易宿所（旅館業法)</p><br>
-          <input type="radio" name="authorization" value="4" class="other"><input type="text" name="other" placeholder="その他" class="disable input_other">
+          <input type="radio" name="authorization" value="4" class="other"><input type="text" name="other1" placeholder="その他" class="disable input_other">
         </div>
         <br>
         <div class="contact_item_wrap">
@@ -117,10 +126,11 @@
         </div>
         <br>
         <div class="radio_wrap">
-          <input type="radio" name="right" value="1"><p class="choice">特になし</p><br>
-          <input type="radio" name="right" value="2"><p class="choice">旅館・ホテル（旅館業法）</p><br>
-          <input type="radio" name="right" value="3"><p class="choice">簡易宿所（旅館業法)</p><br>
-          <input type="radio" name="right" value="4" class="other"><input type="text" name="other" placeholder="その他" class="disable input_other">
+          <input type="radio" name="right" value="1"><p class="choice">所有</p><br>
+          <input type="radio" name="right" value="2"><p class="choice">転貸</p><br>
+          <input type="radio" name="right" value="3"><p class="choice">建築予定</p><br>
+          <input type="radio" name="right" value="4"><p class="choice">購入予定</p><br>
+          <input type="radio" name="right" value="5" class="other"><input type="text" name="other2" placeholder="その他" class="disable input_other">
         </div>
         <br>
         <div class="contact_item_wrap">
@@ -196,7 +206,7 @@
           <input type="radio" name="origin" value="3"><p class="choice">知人/他社の紹介</p><br>
           <input type="radio" name="origin" value="4"><p class="choice">他サイト、ブログ、掲示板の口コミ</p><br>
           <input type="radio" name="origin" value="5"><p class="choice">本・雑誌・新聞</p><br>
-          <input type="radio" name="origin" value="6" class="other"><input type="text" name="other" placeholder="その他" class="input_other">
+          <input type="radio" name="origin" value="6" class="other"><input type="text" name="other3" placeholder="その他" class="input_other">
         </div>
 
         <div class="submit">

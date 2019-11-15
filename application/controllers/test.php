@@ -9,8 +9,13 @@ class Test extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->helper('file');
     $this->load->model('bll/Bll_room');
-
-
+    $this->load->helper('common');
+    /*$this->load->driver('cache', array(
+      'adapter' => 'memcached',
+      //'adapter' => 'file'
+      )
+    );*/
+    $this->load->driver('cache');
 	}
 
   public function memcached_count()
@@ -24,7 +29,7 @@ class Test extends CI_Controller {
               $count += 1;
           }
           //キャッシュに60秒保持
-          $this->cache->save("count", $count, 60);
+          dd($this->cache->memcached->save("count", $count, 60));
       }
 
       $this->benchmark->mark('my_mark_end');

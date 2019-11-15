@@ -86,7 +86,7 @@ class roomManager extends Admin_abstract {
                         }
                         else
                         {
-                            $param['id'] = $res;
+                            $param['image_id'] = $res;
                             $param['image_name'] = $config['file_name'];
                             $param['image_number'] = $fieldname;
                             $param['cover_flg'] = $config['cover_flg'];
