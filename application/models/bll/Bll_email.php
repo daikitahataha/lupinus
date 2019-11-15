@@ -12,18 +12,20 @@ class Bll_email extends MY_model{
 
     if(is_array($email) && !empty($email)){
 	$email = implode(',', $email);
-    }    
+    }
 
     $this->email->to($email);
-    
+
     $this->email->subject($title);
     $this->email->message($message);
 
     $res = $this->email->send();
 
+    dd($res);
+
     return $res;
 
-  } 
+  }
 
 
 
@@ -31,6 +33,3 @@ class Bll_email extends MY_model{
 }
 
 ?>
-
-
-

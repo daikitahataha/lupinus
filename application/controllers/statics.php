@@ -10,11 +10,12 @@ class Statics extends CI_Controller {
 		$this->load->helper('file');
     $this->load->model('bll/Bll_room');
     $this->load->helper('common');
-
+    $this->load->driver('cache');
 	}
 
 	public function index(){
-		$this->load->view('statics/index');
+    $data['room'] = $this->Bll_room->get_room_index();
+		$this->load->view('statics/index', $data);
 	}
 
   public function about(){
@@ -30,14 +31,10 @@ class Statics extends CI_Controller {
 
   public function roomDetail($id){
 
-    $this->load->driver('cache', array(
-      'adapter' => 'memcached',
-      //'adapter' => 'file'
-      )
-    );
+    $this->load->driver('cache', array('adapter' => 'memcached'));
 
     if(!empty($this->cache->get('room_id_'. $id))){
-      $this->cache->get('room_id_' . $id);
+      $data = $this->cache->get('room_id_' . $id);
       //$data['room'] = $this->cache->get('room_id_'. $id);
     }else{
 
@@ -51,15 +48,31 @@ class Statics extends CI_Controller {
       $data['room'][0]['next_url_name'] = $this->Bll_room->get_next_url_name($base_id);
       $data['room'][0]['back_url_name'] = $this->Bll_room->get_back_url_name($base_id);
 
-      $this->cache->save('room_id_' . $id, $data['room']);
+      $this->cache->save('room_id_'. $id, $data);
 
-      /*if($this->cache->save('room_id_' . $id, $data['room'])){
+      /*echo var_export($this->cache->memcached->cache_info(), TRUE);
+      echo'<br>↑cache_info<br>-----------------------<br>';
+
+      if($this->cache->save('room_id_'. $id, $data)){
         echo 'saveしました';
-        exit;
+        echo'<br>↑save<br>-----------------------<br>';
       }else{
         echo '失敗しました';
-        exit;
+        echo'<br>↑save<br>-----------------------<br>';
+      }
+
+      if ($this->cache->memcached->is_supported('memcached')) {
+        echo '<br>----------<br>成功';
+        echo'<br>↑is_supported<br>-----------------------<br>';
+        dd($this->cache->is_supported('memcached'));
+      }
+      else {
+        echo '<br>----------<br>失敗';
+        echo'<br>↑is_supported<br>-----------------------<br>';
+        dd($this->cache->is_supported('memcached'));
       }*/
+
+
 
     }
 

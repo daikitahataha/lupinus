@@ -55,16 +55,16 @@
 
         <div class="menu-nav">
             <p class="nav-item">
-              <a href="<?= base_url('static/about'); ?>" class="nav-link">会社情報</a>
+              <a href="<?= base_url('statics/about'); ?>" class="nav-link">会社情報</a>
             </p>
             <p class="nav-item">
-              <a href="<?= base_url('static/roomIndex'); ?>" class="nav-link">実績</a>
+              <a href="<?= base_url('statics/roomIndex'); ?>" class="nav-link">実績</a>
             </p>
             <p class="nav-item">
-              <a href="<?= base_url('static/fee'); ?>" class="nav-link">料金例</a>
+              <a href="<?= base_url('statics/fee'); ?>" class="nav-link">料金例</a>
             </p>
             <p class="nav-item">
-              <a href="<?= base_url('static/flow'); ?>" class="nav-link">フロー</a>
+              <a href="<?= base_url('statics/flow'); ?>" class="nav-link">フロー</a>
             </p>
             <p class="nav-item">
               <a href="<?= base_url('contact/index'); ?>" class="nav-link">お問い合わせ</a>
