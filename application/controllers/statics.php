@@ -10,7 +10,12 @@ class Statics extends CI_Controller {
 		$this->load->helper('file');
     $this->load->model('bll/Bll_room');
     $this->load->helper('common');
-    $this->load->driver('cache');
+    $this->load->driver('cache', array('adapter' => 'memcached'));
+
+    /*d($this->cache->is_supported('memcached'));
+    echo var_export($this->cache->cache_info(), TRUE);
+
+    dd($this->cache->get('test'));*/
 	}
 
 	public function index(){
@@ -34,11 +39,9 @@ class Statics extends CI_Controller {
 
     $this->load->driver('cache', array('adapter' => 'memcached'));
 
-    dd($this->cache->memcached->get('room_id_' . $id));
 
     if (!empty($this->cache->get('room_id_'. $id))) {
       $data = $this->cache->get('room_id_' . $id);
-      dd($data);
     } else {
 
       $data['room'] = $this->Bll_room->get_room_detail($id);
@@ -72,11 +75,9 @@ class Statics extends CI_Controller {
       else {
         echo '<br>----------<br>失敗';
         echo'<br>↑is_supported<br>-----------------------<br>';
-        dd($this->cache->is_supported('memcached'));
-      }*/
 
-
-
+      }
+      dd($this->cache->memcached->get('room_id_' . $id));*/
     }
 
     $this->load->view('statics/roomDetail', $data);
