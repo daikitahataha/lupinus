@@ -505,14 +505,6 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 }}
 
 
-_::-webkit-full-page-media, _:future, :root .css_selector-top {
-    width: 450px;
-}
-
-_::-webkit-full-page-media, _:future, :root .css_selector-top img {
-    width: 45px;
-}
-
 /* About */
 
 .about-title{
