@@ -2,13 +2,13 @@
 @font-face{
   font-family: 'DINNextLTPro-Medium';
   src: url('../font/DINNextLTPro-Medium.woff') format('woff');
-  font-display: swap;
+
 }
 
 @font-face{
   font-family: 'DINNextLTPro-Regular';
   src: url('../font/DINNextLTPro-Regular.woff') format('woff');
-  font-display: swap;
+
 }
 
 @font-face {
@@ -22,11 +22,11 @@
 }
 
 @font-face {
-  font-family: 'Noto Sans CJK JP Subset';
+  font-family: 'Noto Sans JP';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: local('Noto Sans CJK JP'),
-       local('NotoSansCJKjp-Regular'),
+       url('../font/NotoSansCJKjp-Regular'),
        local('NotoSansJP-Regular'),
        url('NotoSansCJKjp-Regular.woff') format('woff'),
 }
@@ -49,6 +49,13 @@
        local('NotoSansCJKjp-Bold'),
        local('NotoSansJP-Bold'),
        url('NotoSansCJKjp-Bold.woff') format('woff'),
+}
+
+@font-face {
+  font-family: "游ゴシック";
+  src: local("游ゴシック");
+  font-weight: bold;
+  font-display: swap;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
@@ -281,10 +288,6 @@ html{
   font-size: 80px;
 }
 
-.content02-title{
-
-}
-
 .content-flex-lead-tx{
   margin-top: 7%;
 }
@@ -488,11 +491,6 @@ html{
   margin: 7% 0;
 }
 
-
-.case-title p{
-
-}
-
 .case-detail-top{
   display: flex;
   font-size: 12px;
@@ -539,14 +537,6 @@ html{
 .next-allow{
     right: 80px;
 }
-
-@media screen and (min-color-index:0)
-and(-webkit-min-device-pixel-ratio:0) { @media
-{
-    .content03-title {
-        width: 450px;
-    }
-}}
 
 
 /* About */
@@ -624,10 +614,6 @@ and(-webkit-min-device-pixel-ratio:0) { @media
   text-align: center;
   line-height: 2.3em;
   font-family: 'Noto Sans JP';
-}
-
-#company-intro{
-
 }
 
 #company-intro table{
@@ -795,7 +781,6 @@ and(-webkit-min-device-pixel-ratio:0) { @media
   margin-top: 5%;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Noto+Sans+JP'); /*追加*/
 .place{
   line-height: 2em;
   letter-spacing: 0.2em;
@@ -1149,10 +1134,6 @@ and(-webkit-min-device-pixel-ratio:0) { @media
   text-align: center;
 }
 
-.room_detail_content{
-
-}
-
 /* flow */
 
 #flow_content_pc{
@@ -1205,10 +1186,6 @@ and(-webkit-min-device-pixel-ratio:0) { @media
   font-size: 14px;
 }
 
-.tx_lead p{
-
-}
-
 /* contact form  */
 
 #contact{
@@ -1239,10 +1216,6 @@ and(-webkit-min-device-pixel-ratio:0) { @media
   height: 50px;
 }
 
-.radio_wrap{
-
-}
-
 .authorization{
   display: inline-block;
 }
@@ -1263,10 +1236,6 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 .input2{
   width: 30%;
   height: 50px;
-}
-
-.input3{
-
 }
 
 .contact_flex{
@@ -1386,10 +1355,6 @@ textarea{
   font-family: 'DINNextLTPro-Medium';
   font-size: 18px;
   letter-spacing: 0.1em;
-}
-
-.thanks-tx{
-
 }
 
 .thanks-tx p{
