@@ -59,7 +59,7 @@ class Bll_room extends MY_Model{
 
     public function update_imagename($param){
 
-        $data['room_id'] = $param['id'];
+        $data['room_id'] = $param['room_id'];
         $data['name'] = $param['image_name'];
         $ret = $this->db->insert('room_images',$data);
         return $ret;

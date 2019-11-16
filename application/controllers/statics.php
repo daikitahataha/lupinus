@@ -11,15 +11,14 @@ class Statics extends CI_Controller {
     $this->load->model('bll/Bll_room');
     $this->load->helper('common');
     $this->load->driver('cache', array('adapter' => 'memcached'));
-
-    /*d($this->cache->is_supported('memcached'));
-    echo var_export($this->cache->cache_info(), TRUE);
-
-    dd($this->cache->get('test'));*/
+    $this->load->library('image_lib');
+    //$extension = return_images_extension($_SERVER['HTTP_USER_AGENT']);
+    //$this->images_extension = $extension;z
 	}
 
 	public function index(){
     $data['room'] = $this->Bll_room->get_room_index();
+    //$data['room']['extension'] = $this->images_extension;
 		$this->load->view('statics/index', $data);
 	}
 
@@ -54,7 +53,7 @@ class Statics extends CI_Controller {
       $data['room'][0]['next_url_name'] = $this->Bll_room->get_next_url_name($base_id);
       $data['room'][0]['back_url_name'] = $this->Bll_room->get_back_url_name($base_id);
 
-      $this->cache->save('room_id_'. $id, $data);
+      $this->cache->save('room_id_'. $id, $data, 600);
 
       /*echo var_export($this->cache->memcached->cache_info(), TRUE);
       echo'<br>↑cache_info<br>-----------------------<br>';

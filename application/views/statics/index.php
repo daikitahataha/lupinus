@@ -38,7 +38,7 @@
     <div class="wrapper">
       <section id="header">
             <a class="logo" href="<?= base_url('statics/index'); ?>">
-	            <img src="<?= base_url('static/images/component.png'); ?>">
+	            <img src="<?= base_url('static/images/component.WebP'); ?>">
             </a>
 
           <div class="header_menu">
@@ -324,7 +324,7 @@
 		             </div>
               <?php } ?>
 
-                 
+
 	            </div>
 
 
@@ -359,9 +359,9 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="<?= base_url('static/js/slick.min.js'); ?>"></script>
-    <script src="<?= base_url('static/js/common.js'); ?>"></script>
-    <script>
+    <script src="<?= base_url('static/js/slick.min.js'); ?>" defer></script>
+    <script src="<?= base_url('static/js/common.js'); ?>" defer></script>
+    <script defer>
 
 
     $(function(){
