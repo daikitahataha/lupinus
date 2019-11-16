@@ -139,4 +139,14 @@ function return_back_id($id){
   return $res;
 }
 
+function return_images_extension($param){
+  $browser = strpos($param, 'Chrome');
+
+  if($browser == false){
+    return FALSE;
+  }else{
+    return TRUE;
+  }
+}
+
  ?>

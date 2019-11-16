@@ -15,6 +15,7 @@ class roomManager extends Admin_abstract {
         }else{
             redirect('admin/login/index');
         }
+        $this->load->driver('cache', array('adapter' => 'memcached'));
     }
 
     public function index()
@@ -31,6 +32,7 @@ class roomManager extends Admin_abstract {
     }
 
     public function register(){
+        $this->load->driver('cache', array('adapter' => 'memcached'));
 
         $this->load->library('form_validation');
         $this->form_validation->set_rules('place', '地名', 'required',
@@ -86,12 +88,13 @@ class roomManager extends Admin_abstract {
                         }
                         else
                         {
-                            $param['image_id'] = $res;
+                            $param['room_id'] = $res;
                             $param['image_name'] = $config['file_name'];
                             $param['image_number'] = $fieldname;
                             $param['cover_flg'] = $config['cover_flg'];
 
                             $this->Bll_room->update_imagename($param);
+                            $this->cache->clean();
                         }
                     }
                 }
@@ -128,6 +131,10 @@ dd($res);
             redirect('admin/roomManager/thanks');
         } else {
             $this->edit($post['id']);
+        }
+
+        if($this->cache->get('room_id_' . $post['id'])) {
+          $this->cache->clean('room_id_' . $post['id']);
         }
     }
 

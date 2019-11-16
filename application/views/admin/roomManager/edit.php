@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php echo form_open_multipart('admin/roomManager/update');?><br>
-    <?= form_hidden('id',$room['id']); ?></h1>  
+    <?= form_hidden('id',$room['id']); ?></h1>
     <p>地名</p>
     <?php echo form_input('place',$room['place']);?><br>
     <?php echo form_error('place','<div class="error">',"</div>");?><br>
@@ -23,7 +23,7 @@
     <p>ADR</p>
     <?php echo form_input('room_ADR',$room['room_ADR']);?><br>
     <?php echo form_error('room_ADR','<div class="error">',"</div>");?><br>
-    <p>画像</p>   
+    <p>画像</p>
     <?php echo form_upload('image1',$room['image1']);?><br>
     <?php echo form_upload('image2',$room['image2']);?><br>
     <?php echo form_upload('image3',$room['image3']);?><br>
@@ -40,4 +40,3 @@
 
 </body>
 </html>
-
