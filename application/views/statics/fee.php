@@ -251,7 +251,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/_29A5944.png'); ?>">
+            <img src="<?= base_url('static/images/_29A5944.jpg'); ?>">
           </div>
 
           <div class="feeContentdetail">
