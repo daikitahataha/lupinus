@@ -11,6 +11,46 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Noto Sans CJK JP Subset';
+  font-style: normal;
+  font-weight: 350;
+  src: local('Noto Sans CJK JP'),
+       local('NotoSansCJKjp-Thin'),
+       local('NotoSansJP-Thin'),
+       url('NotoSansCJKjp-Thin.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP Subset';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans CJK JP'),
+       local('NotoSansCJKjp-Regular'),
+       local('NotoSansJP-Regular'),
+       url('NotoSansCJKjp-Regular.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP Subset';
+  font-style: normal;
+  font-weight: 450;
+  src: local('Noto Sans CJK JP'),
+       local('NotoSansCJKjp-DemiLight'),
+       local('NotoSansJP-DemiLight'),
+       url('NotoSansCJKjp-DemiLight.woff') format('woff'),
+}
+
+@font-face {
+  font-family: 'Noto Sans CJK JP Subset';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans CJK JP'),
+       local('NotoSansCJKjp-Bold'),
+       local('NotoSansJP-Bold'),
+       url('NotoSansCJKjp-Bold.woff') format('woff'),
+}
+
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 
