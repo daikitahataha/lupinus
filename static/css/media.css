@@ -10,10 +10,6 @@ font-face{
 
 @media screen and (max-width:900px){
 
-  .wrapper{
-    overflow: hidden;
-  }
-
   .header_menu{
     display: none;
   }
@@ -84,14 +80,6 @@ font-face{
 
   .content-title h2{
     font-size: 18px;
-  }
-
-  .sp_display_none{
-    display: none;
-  }
-
-  .pc_display_none{
-    display: block;
   }
 
   .content-tx{

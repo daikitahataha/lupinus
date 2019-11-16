@@ -28,7 +28,15 @@ class Statics extends MY_Controller {
 
   public function roomIndex(){
 
+    $this->load->driver('cache', array('adapter' => 'memcached'));
+
+    if (!empty($this->cache->get('room_index'))) {
+      $data = $this->cache->get('room_index');
+    } else {
+
     $data['room'] = $this->Bll_room->get_room_index();
+    $this->cache->save('room_index', $data, 600);
+  }
 
     $this->load->view('statics/roomIndex', $data);
   }
@@ -37,7 +45,6 @@ class Statics extends MY_Controller {
   {
 
     $this->load->driver('cache', array('adapter' => 'memcached'));
-
 
     if (!empty($this->cache->get('room_id_'. $id))) {
       $data = $this->cache->get('room_id_' . $id);
