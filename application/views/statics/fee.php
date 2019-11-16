@@ -1,29 +1,6 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>︎LUPINUS｜あなたの部屋を、ホテルに</title>
-    <meta name="description" content="例え土地や建物を持っていなくても、お部屋さえあればホテル事業を実現できる時代になりました。ユーザーのライフスタイルへのこだわりが強まり、ニーズが多様化する現代では、ホテル選びにおいても、画一的でないオリジナル性の高い宿泊施設が求められます。7gardenは個性豊かなホテルを数多く作ることで「ユーザーが自分のライフスタイルに合わせてホテルを選べるようになる世界」を実現したいと考えています。ルピナスではお持ちのお部屋で、ユーザーのニーズに応えらえれる「一室物の宿泊体験」を実現します。">
-    <meta name="keywords" content="ホテル 宿泊 体験 ホテル運営 宿泊施設">
-    <meta property="og:title" content="LUPINUS｜あなたの部屋を、ホテルに"/>
-    <meta property="og:site_name" content="LUPINUS｜あなたの部屋を、ホテルに" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="例え土地や建物を持っていなくても、お部屋さえあればホテル事業を実現できる時代になりました。ユーザーのライフスタイルへのこだわりが強まり、ニーズが多様化する現代では、
-                  ホテル選びにおいても、画一的でないオリジナル性の高い宿泊施設が求められます。7gardenは個性豊かなホテルを数多く作ることで「ユーザーが自分のライフスタイルに合わせてホテルを選べるようになる世界」を実現したいと考えています。
-                  ルピナスではお持ちのお部屋で、ユーザーのニーズに応えらえれる「一室物の宿泊体験」を実現します。" />
-
-    <link rel="shortcut icon" href="https://s3.ap-northeast-1.amazonaws.com/sevengarden/image/4/SEVENGARDEN-component-02-1573785425.png">
-    <link rel="stylesheet" href="<?= base_url('static/css/base.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('static/css/media.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('static/css/reset.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('static/css/slick.css'); ?>">
-    <link rel="stylesheet" href="<?= base_url('static/css/slick-theme.css'); ?>">
-    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
-
-</head>
-
+<?= show_head(); ?>
 <body>
   <div class="wrapper">
     <section id="header">
@@ -84,7 +61,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/_29A6477.jpg'); ?>">
+            <img src="<?= base_url('static/images/_29A6477.png'); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -179,7 +156,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/booking_2019_10_29_124.jpg'); ?>">
+            <img src="<?= base_url('static/images/booking_2019_10_29_124.png'); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -274,7 +251,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/_29A5944.jpg'); ?>">
+            <img src="<?= base_url('static/images/_29A5944.png'); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -369,7 +346,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/DSC_0567.jpg'); ?>">
+            <img src="<?= base_url('static/images/DSC_0567.png'); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -464,7 +441,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/twin5_resize.jpg'); ?>">
+            <img src="<?= base_url('static/images/twin5_resize.png'); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -568,31 +545,7 @@
         </div>
     </section>
 
-
-
-
-
-    <div class="footer-roomIndex">
-      <a href="<?= base_url('statics/index') ?>">
-        <div class="footer-logo">
-          <img src="<?= base_url('static/images/component-02.png'); ?>">
-        </div>
-      </a>
-
-      <div class="footer-menu">
-          <ul>
-              <li><a href="<?= base_url('statics/about'); ?>">会社情報</a></li>
-              <li><a href="<?= base_url('statics/roomIndex'); ?>">実績</a></li>
-              <li><a href="<?= base_url('statics/fee'); ?>">料金例</a></li>
-              <li><a href="<?= base_url('statics/flow'); ?>">フロー</a></li>
-              <li><a href="<?= base_url('contact/index'); ?>">お問い合わせ</a></li>
-          </ul>
-      </div>
-
-      <div class="footer-copyright">
-        <p>©LUPINUS 2019 ALL RIGHT RESERVED</p>
-      </div>
-    </div>
+  <?= show_footer(); ?>
   </div>
 </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

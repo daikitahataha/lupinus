@@ -2,12 +2,16 @@
 @font-face{
   font-family: 'DINNextLTPro-Medium';
   src: url('../font/DINNextLTPro-Medium.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face{
   font-family: 'DINNextLTPro-Regular';
   src: url('../font/DINNextLTPro-Regular.woff') format('woff');
+  font-display: swap;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 
 /* header */
@@ -536,7 +540,7 @@ and(-webkit-min-device-pixel-ratio:0) { @media
 }
 
 #about-mv{
-  background: url(../../static/images/_29A6477.jpg) center center no-repeat;
+  background: url(../../static/images/_29A6477.png) center center no-repeat;
   background-size: cover;
   height: 600px;
   position: relative;

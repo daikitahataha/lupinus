@@ -149,4 +149,18 @@ function return_images_extension($param){
   }
 }
 
+function show_head(){
+  $CI = & get_instance();
+  $CI->load->view('common/head');
+}
+
+function show_header(){
+  $CI = & get_instance();
+  $CI->load->view('common/header');
+}
+
+function show_footer(){
+  $CI = & get_instance();
+  $CI->load->view('common/footer'); 
+}
  ?>
