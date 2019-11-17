@@ -1,7 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Statics extends MY_Controller {
+require_once('User_abstract.php');
+
+class Statics extends User_abstract {
 
   public function __construct(){
  	  parent::__construct();
@@ -12,18 +14,20 @@ class Statics extends MY_Controller {
     $this->load->helper('common');
     $this->load->driver('cache', array('adapter' => 'memcached'));
     $this->cache->clean('room_index');
-    //$extension = return_images_extension($_SERVER['HTTP_USER_AGENT']);
-    //$this->images_extension = $extension;z
+
+    $extension = return_images_extension($_SERVER['HTTP_USER_AGENT']);
+    $this->images_extension = $extension;
 	}
 
 	public function index(){
     $data['room'] = $this->Bll_room->get_room_index();
-    //$data['room']['extension'] = $this->images_extension;
+    $data['room']['extension'] = $this->images_extension;
 		$this->load->view('statics/index', $data);
 	}
 
   public function about(){
-    $this->load->view('statics/about');
+    $data['room']['extension'] = $this->images_extension;
+    $this->load->view('statics/about' , $data);
   }
 
   public function roomIndex(){
@@ -38,6 +42,15 @@ class Statics extends MY_Controller {
     $this->cache->save('room_index', $data, 600);
   }
 
+    if(judge_ua($_SERVER['HTTP_USER_AGENT']) == TRUE){
+
+      foreach($data['room'] as $k => $val){
+        $data['room'][$k]['name'] = (str_replace('jpg', 'WebP', $data['room'][$k]['name']));
+        $data['room'][$k]['name'] = str_replace('png' , 'WebP', $data['room'][$k]['name']);
+      }
+    }
+
+    $data['room']['extension'] = $this->images_extension;
     $this->load->view('statics/roomIndex', $data);
   }
 
@@ -60,32 +73,23 @@ class Statics extends MY_Controller {
       $data['room'][0]['next_url_name'] = $this->Bll_room->get_next_url_name($base_id);
       $data['room'][0]['back_url_name'] = $this->Bll_room->get_back_url_name($base_id);
 
+
+
       $this->cache->save('room_id_'. $id, $data, 600);
 
-      /*echo var_export($this->cache->memcached->cache_info(), TRUE);
-      echo'<br>↑cache_info<br>-----------------------<br>';
-
-      if($this->cache->save('room_id_'. $id, $data)){
-        echo 'saveしました';
-        echo'<br>↑save<br>-----------------------<br>';
-      }else{
-        echo '失敗しました';
-        echo'<br>↑save<br>-----------------------<br>';
-      }
-
-      if ($this->cache->memcached->is_supported('memcached')) {
-        echo '<br>----------<br>成功';
-        echo'<br>↑is_supported<br>-----------------------<br>';
-        dd($this->cache->is_supported('memcached'));
-      }
-      else {
-        echo '<br>----------<br>失敗';
-        echo'<br>↑is_supported<br>-----------------------<br>';
 
       }
-      dd($this->cache->memcached->get('room_id_' . $id));*/
-    }
 
+      if(judge_ua($_SERVER['HTTP_USER_AGENT']) == TRUE){
+
+        foreach($data['room'] as $k => $val){
+          if(isset($data['room'][$k]['name'])){
+            $data['room'][$k]['name'] = (str_replace('jpg', 'WebP', $val['name']));
+          }
+        }
+
+      }
+      $data['room']['extension'] = $this->images_extension;
     $this->load->view('statics/roomDetail', $data);
 
   }
@@ -132,11 +136,15 @@ class Statics extends MY_Controller {
 
 
   public function fee(){
-    $this->load->view('statics/fee');
+    $data['room']['extension'] = $this->images_extension;
+
+    $this->load->view('statics/fee', $data);
   }
 
   public function flow(){
-    $this->load->view('statics/flow');
+    $data['room']['extension'] = $this->images_extension;
+
+    $this->load->view('statics/flow', $data);
   }
 
 

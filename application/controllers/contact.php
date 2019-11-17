@@ -12,11 +12,16 @@ class Contact extends CI_Controller {
 		$this->load->library('form_validation');
     $this->load->helper('email');
     $this->load->helper('common');
+
+    $extension = return_images_extension($_SERVER['HTTP_USER_AGENT']);
+    $this->images_extension = $extension;
 	}
 
 	public function index()
 	{
-		$this->load->view('contact/form');
+
+    $data['room']['extension'] = $this->images_extension;
+		$this->load->view('contact/form', $data);
 	}
 
 	public function thanks(){
@@ -64,7 +69,8 @@ class Contact extends CI_Controller {
 
       $result = $this->Bll_email->send_email($title, $message, $email);
 
-      $this->load->view('contact/thanks');
+      $data['room']['extension'] = $this->images_extension;
+      $this->load->view('contact/thanks' , $data);
       //$this->load->view('email/template_email');
     }else{
       $this->load->view('contact/form');

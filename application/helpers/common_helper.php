@@ -143,10 +143,20 @@ function return_images_extension($param){
   $browser = strpos($param, 'Chrome');
 
   if($browser == false){
-    return FALSE;
+    return 'png';
   }else{
+    return 'WebP';
+  }
+}
+
+function judge_ua($param){
+
+  $browser = strpos($param, 'Chrome');
+
+  if($browser == TRUE){
     return TRUE;
   }
+
 }
 
 function show_head(){
@@ -161,6 +171,6 @@ function show_header(){
 
 function show_footer(){
   $CI = & get_instance();
-  $CI->load->view('common/footer'); 
+  $CI->load->view('common/footer');
 }
  ?>
