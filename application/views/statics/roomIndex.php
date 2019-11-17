@@ -1,6 +1,6 @@
 <!doctype html>
 <html>
-<<?= show_head();  ?>
+<?= show_head();  ?>
 
 <body>
     <div class="wrapper">
