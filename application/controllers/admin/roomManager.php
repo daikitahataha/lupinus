@@ -16,6 +16,9 @@ class roomManager extends Admin_abstract {
             redirect('admin/login/index');
         }
         $this->load->driver('cache', array('adapter' => 'memcached'));
+
+        $extension = return_images_extension($_SERVER['HTTP_USER_AGENT']);
+        $this->images_extension = $extension;
     }
 
     public function index()

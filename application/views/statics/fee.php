@@ -3,51 +3,7 @@
 <?= show_head(); ?>
 <body>
   <div class="wrapper">
-    <section id="header">
-          <a class="logo" href="<?= base_url('statics/index') ?>">
-            <img src="<?= base_url('static/images/component.png'); ?>">
-          </a>
-
-        <div class="header_menu">
-          <ul>
-            <a href="<?= base_url('statics/about'); ?>"><li class="menu_normal">会社情報</li></a>
-            <a href="<?= base_url('statics/roomIndex'); ?>"><li class="menu_normal">実績</li></a>
-            <a class="span_now" href="<?= base_url('statics/fee'); ?>"><li class="menu_normal">料金例</li></a>
-            <a href="<?= base_url('statics/flow'); ?>"><li class="menu_normal">フロー</li></a>
-          </ul>
-          <div class="menu_inquiry">
-            <a href="<?= base_url('contact/index'); ?>">
-              お問い合わせ
-            </a>
-          </div>
-        </div>
-
-        <div class="sp_header_menu">
-          <div class="menu menu2" id="MenuBtn">
-            <span class="menu-line menu-line2 menu-top-line"></span>
-            <span class="menu-line menu-line2 menu-middle-line"></span>
-            <span class="menu-line menu-line2 menu-bottom-line"></span>
-          </div>
-        </div>
-
-        <div class="menu-nav">
-            <p class="nav-item">
-              <a href="<?= base_url('statics/about'); ?>" class="nav-link">会社情報</a>
-            </p>
-            <p class="nav-item">
-              <a href="<?= base_url('statics/roomIndex'); ?>" class="nav-link">実績</a>
-            </p>
-            <p class="nav-item">
-              <a href="<?= base_url('statics/fee'); ?>" class="nav-link">料金例</a>
-            </p>
-            <p class="nav-item">
-              <a href="<?= base_url('statics/flow'); ?>" class="nav-link">フロー</a>
-            </p>
-            <p class="nav-item">
-              <a href="<?= base_url('contact/index'); ?>" class="nav-link">お問い合わせ</a>
-            </p>
-        </div>
-    </section>
+    <?= show_header(); ?>
 
     <div class="about-title">
        <p>PRICE SIMULATION</p>
@@ -61,7 +17,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/_29A6477.png'); ?>">
+            <img src="<?= base_url('static/images/_29A6477.' . $room['extension'] ); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -116,14 +72,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/Group 85.png'); ?>">
+                  <img src="<?= base_url('static/images/Group 85.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">稼働率(月々)</p>
                 <p class="value-numeric">85~92%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/bars.png'); ?>">
+                  <img src="<?= base_url('static/images/bars.' $room['extension']); ?>">
                 </div>
                 <p class="value-item">利益率</p>
                 <p class="value-numeric">25~33%</p>
@@ -133,14 +89,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/recycle.png'); ?>">
+                  <img src="<?= base_url('static/images/recycle.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利回り</p>
                 <p class="value-numeric">16%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/like.png'); ?>">
+                  <img src="<?= base_url('static/images/like.'. $room['extension']); ?>">
                 </div>
                 <p class="value-item">顧客満足度</p>
                 <p class="value-numeric">96%</p>
@@ -156,7 +112,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/booking_2019_10_29_124.png'); ?>">
+            <img src="<?= base_url('static/images/booking_2019_10_29_124.' . $room['extension']); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -212,14 +168,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/Group 85.png'); ?>">
+                  <img src="<?= base_url('static/images/Group 85.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">稼働率(月々)</p>
                 <p class="value-numeric">80%~88%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/bars.png'); ?>">
+                  <img src="<?= base_url('static/images/bars.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利益率</p>
                 <p class="value-numeric">22~28%</p>
@@ -229,14 +185,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/recycle.png'); ?>">
+                  <img src="<?= base_url('static/images/recycle.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利回り</p>
                 <p class="value-numeric">14%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/like.png'); ?>">
+                  <img src="<?= base_url('static/images/like.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">顧客満足度</p>
                 <p class="value-numeric">95%</p>
@@ -251,7 +207,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/_29A5944.jpg'); ?>">
+            <img src="<?= base_url('static/images/_29A5944.' . $room['extension']); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -307,14 +263,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/Group 85.png'); ?>">
+                  <img src="<?= base_url('static/images/Group 85.'. $room['extension']); ?>">
                 </div>
                 <p class="value-item">稼働率(月々)</p>
                 <p class="value-numeric">78%~85%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/bars.png'); ?>">
+                  <img src="<?= base_url('static/images/bars.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利益率</p>
                 <p class="value-numeric">22~28%</p>
@@ -324,14 +280,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/recycle.png'); ?>">
+                  <img src="<?= base_url('static/images/recycle.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利回り</p>
                 <p class="value-numeric">14%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/like.png'); ?>">
+                  <img src="<?= base_url('static/images/like.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">顧客満足度</p>
                 <p class="value-numeric">90%</p>
@@ -346,7 +302,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/DSC_0567.png'); ?>">
+            <img src="<?= base_url('static/images/DSC_0567.' . $room['extension']); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -402,14 +358,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/Group 85.png'); ?>">
+                  <img src="<?= base_url('static/images/Group 85.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">稼働率(月々)</p>
                 <p class="value-numeric">80%~87%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/bars.png'); ?>">
+                  <img src="<?= base_url('static/images/bars.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利益率</p>
                 <p class="value-numeric">22~28%</p>
@@ -419,14 +375,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/recycle.png'); ?>">
+                  <img src="<?= base_url('static/images/recycle.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利回り</p>
                 <p class="value-numeric">14%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/like.png'); ?>">
+                  <img src="<?= base_url('static/images/like.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">顧客満足度</p>
                 <p class="value-numeric">92%</p>
@@ -441,7 +397,7 @@
           </div>
 
           <div class="feeContent-img">
-            <img src="<?= base_url('static/images/twin5_resize.png'); ?>">
+            <img src="<?= base_url('static/images/twin5_resize.' . $room['extension']); ?>">
           </div>
 
           <div class="feeContentdetail">
@@ -497,14 +453,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/Group 85.png'); ?>">
+                  <img src="<?= base_url('static/images/Group 85.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">稼働率(月々)</p>
                 <p class="value-numeric">88%~95%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/bars.png'); ?>">
+                  <img src="<?= base_url('static/images/bars.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利益率</p>
                 <p class="value-numeric">22~28%</p>
@@ -514,14 +470,14 @@
             <div class="result-flex">
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/recycle.png'); ?>">
+                  <img src="<?= base_url('static/images/recycle.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">利回り</p>
                 <p class="value-numeric">14%</p>
               </div>
               <div class="value">
                 <div class="value-img">
-                  <img src="<?= base_url('static/images/like.png'); ?>">
+                  <img src="<?= base_url('static/images/like.' . $room['extension']); ?>">
                 </div>
                 <p class="value-item">顧客満足度</p>
                 <p class="value-numeric">97%</p>

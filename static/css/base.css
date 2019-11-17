@@ -165,7 +165,7 @@ html{
 }
 
 #top-mv{
-  background: url(../../static/images/_29A5944.jpg) center center no-repeat;
+  background: url(../../static/images/_29A5944.png) center center no-repeat;
   background-size: cover;
   height: 550px;
   position: relative;
@@ -867,6 +867,7 @@ html{
 
 .roomDetailcontent-img img{
   width: 100%;
+  margin-bottom: 3%;
 }
 
 .detailArrows{

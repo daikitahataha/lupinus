@@ -7,7 +7,7 @@
       <?= show_header(); ?>
 
       <section id="top-mv">
-          <div class="mv-tx">
+          <div class="mv-tx" >
               <h2>あなたの部屋を、ホテルに</h2>
   	          <h3>気軽に理想のホテルを創れる、経営できる時代へ</h3>
 	        </div>
@@ -20,7 +20,7 @@
               <div class="content-title">
  	                <h2>ひと部屋からホテルが創れる、<br>新たな時代</h2>
                   <div class="bed">
-                      <img src="<?= base_url('static/images/group-5.png'); ?>">
+                      <img src="<?= base_url('static/images/group-5.' . $room['extension']); ?>">
                   </div>
 
                   <div class="content-lead-tx">
@@ -71,14 +71,14 @@
                   </div>
 
                   <div class="content-flex-img">
-                      <img src="<?= base_url('static/images/group-39.png'); ?>">
+                      <img src="<?= base_url('static/images/group-39.'  . $room['extension']); ?>">
                   </div>
               </div>
 
               <div class="content02-flex sp_display_none">
 
                   <div class="content-flex-img2">
-                      <img src="<?= base_url('static/images/group-50.png'); ?>">
+                      <img src="<?= base_url('static/images/group-50.'  . $room['extension']); ?>">
                   </div>
                   <div class="content02-tx">
                     <div class="flex-title sp_flex_title">
@@ -123,7 +123,7 @@
                     </div>
                   </div>
                   <div class="content-flex-img2">
-                      <img src="<?= base_url('static/images/group-50.png'); ?>">
+                      <img src="<?= base_url('static/images/group-50.'  . $room['extension']); ?>">
                   </div>
               </div>
 
@@ -149,7 +149,7 @@
                   </div>
 
                   <div class="content-flex-img2">
-                      <img src="<?= base_url('static/images/group-51.png'); ?>">
+                      <img src="<?= base_url('static/images/group-51.'  . $room['extension']); ?>">
                   </div>
               </div>
 
@@ -167,11 +167,11 @@
              </div>
 
              <div class="content03-title css_selector-top">
- 		            <img src="<?= base_url('static/images/tick-inside-circle.png'); ?>">
+ 		            <img src="<?= base_url('static/images/tick-inside-circle.'  . $room['extension']); ?>">
                 <p>部屋づくりから運営まで、<br class="pc_display_none">全部丸投げOK</p>
 	           </div>
              <div class="content03-img">
-	              <img src="<?= base_url('static/images/group-52.png'); ?>">
+	              <img src="<?= base_url('static/images/group-52.'  . $room['extension']); ?>">
 	           </div>
              <div class="content03-tx">
   		           <p>
@@ -185,11 +185,11 @@
 
 
              <div class="content03-title2 css_selector-top">
- 		            <img src="<?= base_url('static/images/tick-inside-circle.png'); ?>">
+ 		            <img src="<?= base_url('static/images/tick-inside-circle.'  . $room['extension']); ?>">
                 <p>圧倒的な集客力=利益確保</p>
 	           </div>
              <div class="content03-img">
-	              <img src="<?= base_url('static/images/group-60.png'); ?>">
+	              <img src="<?= base_url('static/images/group-60.'  . $room['extension']); ?>">
 	           </div>
              <div class="content03-tx">
   		           <p>
@@ -201,11 +201,11 @@
 
 
              <div class="content03-title3 css_selector-top">
- 		            <img src="<?= base_url('static/images/tick-inside-circle.png'); ?>">
+ 		            <img src="<?= base_url('static/images/tick-inside-circle.'  . $room['extension']); ?>">
                 <p>丁寧&手厚いサポート</p>
 	           </div>
              <div class="content03-img">
-	              <img src="<?= base_url('static/images/group-61.png'); ?>">
+	              <img src="<?= base_url('static/images/group-61.'  . $room['extension']); ?>">
 	           </div>
              <div class="content03-tx">
   		           <p>
@@ -273,8 +273,8 @@
        autoplay: true,
        slidesToShow: 3,
        autoplaySpeed: 5000,
-       prevArrow: '<img src="<?= base_url('static/images/down-arrow.png'); ?>" class="slick-prev">',
-       nextArrow: '<img src="<?= base_url('static/images/down-arrow-1.png'); ?>" class="slick-next">',
+       prevArrow: '<img src="<?= base_url('static/images/down-arrow.'  . $room['extension']); ?>" class="slick-prev">',
+       nextArrow: '<img src="<?= base_url('static/images/down-arrow-1.'. $room['extension']); ?>" class="slick-next">',
 
        responsive: [{
       breakpoint: 900,  //ブレイクポイントを指定

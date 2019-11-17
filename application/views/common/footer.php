@@ -1,7 +1,7 @@
 <div class="footer">
   <a href="<?= base_url('statics/index'); ?>">
     <div class="footer-logo">
-      <img src="<?= base_url('static/images/component-02.png'); ?>">
+      <img src="<?= base_url('static/images/component-02.' . $room['extension']); ?>">
     </div>
   </a>
 

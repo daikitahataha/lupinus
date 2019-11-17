@@ -14,7 +14,7 @@
     <section id="flow_content_pc">
         <div class="flow_content_proccess">
           <div class="flow_content_proccess_img">
-              <img src="<?= base_url('static/images/email.png'); ?>">
+              <img src="<?= base_url('static/images/email.' . $room['extension']); ?>">
           </div>
 
           <div class="flow_content_proccess_tx">
@@ -30,7 +30,7 @@
 
         <div class="flow_content_proccess">
           <div class="flow_content_proccess_img">
-              <img src="<?= base_url('static/images/inspection.png'); ?>">
+              <img src="<?= base_url('static/images/inspection.' . $room['extension']); ?>">
           </div>
 
           <div class="flow_content_proccess_tx">
@@ -47,7 +47,7 @@
 
         <div class="flow_content_proccess">
           <div class="flow_content_proccess_img">
-              <img src="<?= base_url('static/images/content.png'); ?>">
+              <img src="<?= base_url('static/images/content.' . $room['extension']); ?>">
           </div>
 
           <div class="flow_content_proccess_tx">
@@ -64,7 +64,7 @@
 
         <div class="flow_content_proccess">
           <div class="flow_content_proccess_img">
-              <img src="<?= base_url('static/images/bars-1.png'); ?>">
+              <img src="<?= base_url('static/images/bars-1.' . $room['extension']); ?>">
           </div>
 
           <div class="flow_content_proccess_tx">
@@ -93,7 +93,7 @@
           </div>
 
           <div class="flow_content_proccess_img">
-              <img src="<?= base_url('static/images/email.png'); ?>">
+              <img src="<?= base_url('static/images/email.' . $room['extension']); ?>">
           </div>
         </div>
 
@@ -111,7 +111,7 @@
           </div>
 
           <div class="flow_content_proccess_img">
-              <img src="<?= base_url('static/images/inspection.png'); ?>">
+              <img src="<?= base_url('static/images/inspection.' . $room['extension']); ?>">
           </div>
         </div>
 
@@ -129,7 +129,7 @@
           </div>
 
           <div class="flow_content_proccess_img">
-              <img src="<?= base_url('static/images/content.png'); ?>">
+              <img src="<?= base_url('static/images/content.' . $room['extension']); ?>">
           </div>
         </div>
 
@@ -146,7 +146,7 @@
           </div>
 
           <div class="flow_content_proccess_img">
-              <img src="<?= base_url('static/images/bars-1.png'); ?>">
+              <img src="<?= base_url('static/images/bars-1.' . $room['extension']); ?>">
           </div>
         </div>
     </section>
