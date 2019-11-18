@@ -235,28 +235,28 @@
                <?php foreach($room as $key => $val){ ?>
                  <div class="case">
 		                 <div class="case-img">
-                         <?php if(isset($room[$key]['name'])){ ?>
+                         <?php if(!empty($room[$key]['name'])){ ?>
 		                     <img src="<?= show_room_images($room[$key]['name']); ?>">
                          <?php } ?>
                      </div>
                      <div class="case-title">
-                        <?php if(isset($val['place']) && isset($val['room_name'])){  ?>
+                        <?php if(!empty($val['place']) && !empty($val['room_name'])){  ?>
  		                    <p><?= $val['place']; ?>　<?= $val['room_name']; ?></p>
                         <?php }  ?>
 		                 </div>
   		               <div class="case-detail-top">
-                         <?php if(isset($val['start_date'])){ ?>
+                         <?php if(!empty($val['start_date'])){ ?>
 		                     <p>運営開始日：<?= $val['start_date']; ?></p>
                        <?php } ?>
 		                     <!--<p class="benefit">利益率：30%</p>-->
 		                 </div>
-                     <?php if(isset($val['id'])){ ?>
+                     <?php if(!empty($val['id'])){ ?>
                      <a href="<?= base_url('statics/roomDetail/' . $val['id']); ?>"><p class="seeCase">このケースを見る</p></a>
                    <?php } ?>
 		             </div>
                <?php } ?>
 	           </div>
-        </section>
+        
 
 
              <div class="seeAlltop">

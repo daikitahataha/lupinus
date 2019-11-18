@@ -24,7 +24,7 @@
 
         <div class="roomDetailcontent-img">
           <?php foreach($room as $key => $val){ ?>
-              <?php if(isset($val['name'])){  ?>
+              <?php if(!empty($val['name'])){  ?>
                 <img src="<?= show_room_images($val['name']); ?>">
               <?php } ?>
           <?php } ?>
