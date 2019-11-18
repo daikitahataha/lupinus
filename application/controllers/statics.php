@@ -45,8 +45,10 @@ class Statics extends User_abstract {
     if(judge_ua($_SERVER['HTTP_USER_AGENT']) == TRUE){
 
       foreach($data['room'] as $k => $val){
-        $data['room'][$k]['name'] = (str_replace('jpg', 'WebP', $data['room'][$k]['name']));
-        $data['room'][$k]['name'] = str_replace('png' , 'WebP', $data['room'][$k]['name']);
+        if(isset($data['room'][$k]['name'])){
+          $data['room'][$k]['name'] = (str_replace('jpg', 'WebP', $data['room'][$k]['name']));
+          $data['room'][$k]['name'] = str_replace('png' , 'WebP', $data['room'][$k]['name']);
+        }
       }
     }
 

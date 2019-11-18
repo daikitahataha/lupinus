@@ -231,26 +231,32 @@
              </div>
 
              <div class="case-slider">
+
                <?php foreach($room as $key => $val){ ?>
                  <div class="case">
 		                 <div class="case-img">
+                         <?php if(isset($room[$key]['name'])){ ?>
 		                     <img src="<?= show_room_images($room[$key]['name']); ?>">
+                         <?php } ?>
                      </div>
                      <div class="case-title">
+                        <?php if(isset($val['place']) && isset($val['room_name'])){  ?>
  		                    <p><?= $val['place']; ?>　<?= $val['room_name']; ?></p>
+                        <?php }  ?>
 		                 </div>
   		               <div class="case-detail-top">
+                         <?php if(isset($val['start_date'])){ ?>
 		                     <p>運営開始日：<?= $val['start_date']; ?></p>
+                       <?php } ?>
 		                     <!--<p class="benefit">利益率：30%</p>-->
 		                 </div>
-
+                     <?php if(isset($val['id'])){ ?>
                      <a href="<?= base_url('statics/roomDetail/' . $val['id']); ?>"><p class="seeCase">このケースを見る</p></a>
+                   <?php } ?>
 		             </div>
-              <?php } ?>
-
-
-	            </div>
-
+               <?php } ?>
+	           </div>
+        </section>
 
 
              <div class="seeAlltop">
@@ -258,8 +264,9 @@
 	           </div>
         </section>
         <?= show_footer(); ?>
-      <div>
+
     </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="<?= base_url('static/js/slick.min.js'); ?>" defer></script>
