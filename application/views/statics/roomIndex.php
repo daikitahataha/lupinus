@@ -13,17 +13,23 @@
 <section id="room-index">
     <div class="room_flex">
 
-        <?php foreach($room as $key => $val){ ?>
+
+      <?php foreach($room as $key => $val){ ?>
       <div class="room_index_content">
         <div class="room-index-content-img">
+          <?php if(isset($val['id'])){  ?>
             <a href="<?= base_url('statics/roomDetail/' . $val['id']); ?>">
-
+          <?php } ?>
+          <?php if(isset($val['name'])){ ?>
               <img src="<?= show_room_images($room[$key]['name']); ?>">
+          <?php } ?>
             </a>
         </div>
         <div class="room-content-tx">
+            <?php if(isset($val['place']) && isset($val['start_date'])){  ?>
             <p class="place"><?= $val['place']; ?></p>
             <p class="date">運営開始日：<?= $val['start_date']; ?></p>
+          <?php } ?>
         </div>
       </div>
       <?php } ?>
