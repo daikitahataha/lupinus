@@ -7,13 +7,8 @@ class Statics extends User_abstract {
 
   public function __construct(){
  	  parent::__construct();
-		$this->load->helper('url');
-		$this->load->helper('form');
-		$this->load->helper('file');
     $this->load->model('bll/Bll_room');
-    $this->load->helper('common');
     $this->load->driver('cache', array('adapter' => 'memcached'));
-    $this->cache->clean('room_index');
 
     $extension = return_images_extension($_SERVER['HTTP_USER_AGENT']);
     $this->images_extension = $extension;

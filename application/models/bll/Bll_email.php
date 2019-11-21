@@ -13,7 +13,10 @@ class Bll_email extends MY_model{
     $this->email->from($from, $name);
     if(is_array($email) && !empty($email)){
 	$email = implode(',', $email);
+
     }
+
+    
 
     $this->email->to($email);
 
