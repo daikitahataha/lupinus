@@ -1,17 +1,14 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Contact extends CI_Controller {
+require_once('User_abstract.php');
+
+class Contact extends User_abstract {
 
 
-        public function __construct(){
- 	  	parent::__construct();
-		$this->load->helper('url');
-		$this->load->helper('form');
-		$this->load->helper('file');
-		$this->load->library('form_validation');
+  public function __construct(){
+ 	  parent::__construct();
     $this->load->helper('email');
-    $this->load->helper('common');
 
     $extension = return_images_extension($_SERVER['HTTP_USER_AGENT']);
     $this->images_extension = $extension;

@@ -7,7 +7,6 @@ class roomManager extends Admin_abstract {
 
     public function __construct(){
         parent::__construct();
-
         $s_id = $this->session->userdata('s_id');
         $permission_status = $this->session->userdata('permission_status');
         if(!empty($s_id)){
