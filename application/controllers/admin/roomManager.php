@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 require_once('Admin_abstract.php');
 
-class roomManager extends Admin_abstract {
+class RoomManager extends Admin_abstract {
 
     public function __construct(){
         parent::__construct();
