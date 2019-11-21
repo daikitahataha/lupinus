@@ -148,4 +148,46 @@ dd($res);
     public function thanks(){
         $this->load->view('admin/roomManager/thanks');
     }
+
+
+    public function mail(){
+        $this->load->view('admin/roomManager/mail');
+    }
+
+    public function mail_exe(){
+        $this->load->library('form_validation');
+        $this->form_validation->set_rules('place', '地名', 'required',
+                array('required' =>'%sは必須です'));
+        $this->form_validation->set_rules('start_date', '運営開始日', 'required',
+                array('required' =>'%sは必須です'));
+        $this->form_validation->set_rules('room_name', '部屋名', 'required',
+                array('required' =>'%sは必須です'));
+        $this->form_validation->set_rules('room_addreess', '住所', 'required',
+                array('required' =>'%sは必須です'));
+        $this->form_validation->set_rules('room_ADR', 'ADR', 'required',
+                array('required' =>'%sは必須です'));
+
+        if ($this->form_validation->run() == FALSE) {
+            #$this->load->view('admin/roomManager/create');
+            $this->mail();
+        } else {
+            $this->load->library('parser');
+            $this->config->load('app',TRUE);
+            $post = $this->input->post();
+
+            $title = '宮崎です';
+            $message = $this->parser->parse('email/miyazaki_email', $post, TRUE);
+            $email = $this->config->item('app')['miyazaki'];
+            $this->load->model('bll/Bll_miyazaki_mail');
+            $this->Bll_miyazaki_mail->send_email($title, $message, $email);
+
+            $this->load->view('email/thanks');
+        }
+
+    }
+
+
+
+
+
 }
