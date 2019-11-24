@@ -44,14 +44,14 @@ class Test extends CI_Controller {
   public function memcached_caching_test(){
     $this->load->driver('cache', array('adapter' => 'memcached'));
 
-    /*if ($this->cache->is_supported('memcached')) {
+    if ($this->cache->is_supported('memcached')) {
       echo '成功';
       $this->cache->is_supported('memcached');
     }
     else {
       echo '失敗';
       $this->cache->is_supported('memcached');
-    }*/
+    }
     $data = 'aaa';
 
     $this->cache->save('1' ,$data);

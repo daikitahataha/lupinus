@@ -22,6 +22,6 @@ class Error404 extends User_abstract {
 		$this->load->view('error/error_404' , $data);
 	}
 
-
+//test
 
 }
