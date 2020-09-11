@@ -8,7 +8,6 @@ class Error404 extends User_abstract {
 
   public function __construct(){
  	  parent::__construct();
-		$this->load->library('form_validation');
 
     $extension = return_images_extension($_SERVER['HTTP_USER_AGENT']);
     $this->images_extension = $extension;

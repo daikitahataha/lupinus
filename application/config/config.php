@@ -24,12 +24,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 
-$prot = 'http://';
-if (!empty($_SEVER['HTTPS'])){
-  $prot = 'https://';
-}
+//$prot = 'http://';
+//if (!empty($_SEVER['HTTPS'])){
+//  $prot = 'https://';
+//}
 
-$config['base_url'] = $prot . $_SERVER['HTTP_HOST'] . '/';
+//$config['base_url'] = $prot . $_SERVER['HTTP_HOST'] . '/';
+
+$config['base_url'] = 'http://lupinus-room.com';
 
 /*
 |--------------------------------------------------------------------------

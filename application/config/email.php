@@ -5,9 +5,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['protocol']     = 'smtp';
 $config['smtp_host']    = 'smtp.googlemail.com';
 //SMTP user
-$config['smtp_user']    = 'otohiko0606@gmail.com';
+$config['smtp_user']    = 'info@7garden.co.jp';
 //SMTP password
-$config['smtp_pass']    = '783640da!';
+//$config['smtp_pass']    = 'djlvgcpmxgyjopsw';
+$config['smtp_pass']    = 'eyuqupnmzanaymdt';
 //SMTP port
 $config['smtp_port']    = '465';
 //SMTP time limit
@@ -18,6 +19,6 @@ $config['mailtype']     = "html";
 $config['charset']      = 'utf-8';
 $config['smtp_crypto']  = 'ssl';
 $config['from'] = 'info@7garden.co.jp';
-$config['from_name'] = '7garden';
+$config['from_name'] = 'LUPINUS';
 
 ?>
